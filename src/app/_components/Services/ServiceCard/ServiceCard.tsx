@@ -8,7 +8,7 @@ export default function ServiceCard({ obj }: {obj:serviceObjType}) {
                 <div className="innerOfCard mx-auto hover:cursor-pointer">
                     <figure className='flex flex-col justify-center gap-y-3'>
                         <div className='relative w-full h-[180px] mx-auto  '>
-                            <Image src="/dr.jfif" fill alt="service we offer" />
+                            <Image src="/dr.jfif" fill sizes="350px" alt="service we offer" />
                         </div>
                         <figcaption>
                             <h2 className='text-2xl font-bold text-emerald-800'>{obj.title}</h2>
