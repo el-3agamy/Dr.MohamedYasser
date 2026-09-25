@@ -1,7 +1,14 @@
 import Image from 'next/image'
 import React from 'react'
 
-export default function Certificate({item}) {
+type CertificateProps = {
+  item: {
+    id: number
+    title: string
+    src: string
+  }
+}
+export default function Certificate({item} :CertificateProps) {
     
   return (
     <>
