@@ -1,13 +1,14 @@
 import Image from 'next/image'
-import React from 'react'
-
+import { useTranslations } from 'next-intl'
 export default function About() {
+
+  const t = useTranslations("About") ;
   return (
     <>
       {/* Changed w-screen to w-full */}
       <article className='p-11 w-screen flex justify-around items-center gap-10 bg-emerald-700'>
         <div className='flex-2'>
-          <p>
+          {/* <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Aliquam fuga, possimus tenetur numquam aperiam id blanditiis
             maiores nostrum repellat voluptates vel natus fugit veritatis 
@@ -18,6 +19,11 @@ export default function About() {
             harum dolore cum voluptas error perspiciatis suscipit consequuntur saepe sint 
             iure vitae cupiditate sapiente sed, dolores eius fugit et aliquid ipsam quia. 
             Facilis asperiores saepe nobis reprehenderit,
+          </p> */}
+          <p>
+           {
+            t("bio")
+           }
           </p>
         </div>
         <div className='flex-1 bg-amber-300'>

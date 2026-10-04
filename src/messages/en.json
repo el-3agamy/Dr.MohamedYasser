@@ -1,0 +1,19 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contacts",
+    "locations": "Locations",
+    "bookAppointment": "Book an appointment",
+    "Mohamed Yasser" :"Dr. Mohamed Yasser" ,
+    "switchLanguage": "العربية"
+  } ,
+  "Hero" :{
+    "title" : "We are Here " ,
+    "subtitle" : "for You"
+  } ,
+  "About" :{
+    "bio" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga, possimus tenetur numquam aperiam id blanditiis maiores nostrum repellat voluptates vel natus fugit veritatis amet illum nisi velit a culpa unde dolores earum aliquid non sit. Veniam saepe inventore distinctio, a voluptates illo quidem reprehenderit commodi! Cum molestiae nobis doloribus hic quasi consequuntur quibusdam vel praesentium animi. Itaque animi doloremque veniam nihil ipsum repudiandae harum dolore cum voluptas error perspiciatis suscipit consequuntur saepe sint iure vitae cupiditate sapiente sed, dolores eius fugit et aliquid ipsam quia. Facilis asperiores saepe nobis reprehenderit,"
+  }
+}
