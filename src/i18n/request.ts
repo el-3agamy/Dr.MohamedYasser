@@ -31,6 +31,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
   return {
     locale,
-    messages: locale === "ar" ? ar : en,
+    messages: locale === "en" ? en : ar,
   };
 });
