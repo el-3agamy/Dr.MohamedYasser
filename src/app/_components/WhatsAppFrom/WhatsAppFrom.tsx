@@ -46,9 +46,11 @@
 "use client"
 
 import { useState, useTransition } from 'react'
-import { submitToSheets } from '../../actions' // Make sure the path matches your actions.ts file
+import { submitToSheets } from '../../actions' 
+import { useTranslations } from 'next-intl'
 
 export default function WhatsAppFrom() {
+  const t = useTranslations("Contact") ;
   const [name, setName] = useState('')
   const [whatsapp, setWhatsapp] = useState('')
   const [statusMessage, setStatusMessage] = useState('')
@@ -87,7 +89,7 @@ export default function WhatsAppFrom() {
               after:w-[70px]
               after:bg-amber-200
          '>
-          Contact Us.
+         {t("title")}
         </h2>
         <div className='flex justify-center items-center w-screen'>
           <form 
@@ -104,7 +106,7 @@ export default function WhatsAppFrom() {
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                placeholder='Enter Your Full Name'
+                placeholder={t("userNameInputPlaceholder")}
                 className='bg-white w-full border border-emerald-200 rounded-[5px] py-[3px] px-[10px] focus:border-emerald-500 outline-0 focus:border-[2px]'
               />
             </div>
@@ -115,7 +117,7 @@ export default function WhatsAppFrom() {
                 required
                 inputMode='numeric' 
                 value={whatsapp}
-                placeholder="Enter Your What's App Number"
+                placeholder={t("whatsAppInputPlaceholder")}
                 className='bg-white w-full border border-emerald-200 rounded-[5px] py-[3px] px-[10px] focus:border-emerald-500 outline-0 focus:border-[2px]'
                 onInput={(e) => {
                   const cleaned = e.currentTarget.value.replace(/\D/g, '');
@@ -128,9 +130,9 @@ export default function WhatsAppFrom() {
               <button
                 type="submit"
                 disabled={isPending}
-                className='w-full bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-2 px-4 rounded-[5px] transition-colors disabled:opacity-50'
+                className='w-full bg-emerald-700 hover:cursor-pointer hover:bg-emerald-800 text-white font-medium py-2 px-4 rounded-[5px] transition-colors disabled:opacity-50'
               >
-                {isPending ? 'Sending...' : 'Submit'}
+                {isPending ? 'Sending...' : t("btn")}
               </button>
             </div>
 

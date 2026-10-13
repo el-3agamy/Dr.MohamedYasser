@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 
 
 
@@ -15,7 +16,7 @@ export default function BranchCard({
   mapUrl,
 }: Branch) {
   const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address)}`;
-
+  const t = useTranslations("Locations") ;
   return (
     <article className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
       <iframe
@@ -44,7 +45,7 @@ export default function BranchCard({
           rel="noopener noreferrer"
           className="inline-block rounded-lg bg-blue-600 px-5 py-3 text-white"
         >
-          Get Directions
+          {t("getDir")}
         </a>
       </div>
     </article>

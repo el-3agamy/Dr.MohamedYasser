@@ -423,10 +423,12 @@
 
 "use client";
 
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRef, useState } from "react";
 
 export default function Smile() {
+  const t = useTranslations("Smile");
   const [position, setPosition] = useState(50);
   const sliderRef = useRef<HTMLDivElement>(null);
 
@@ -480,7 +482,7 @@ export default function Smile() {
           after:bg-amber-200
         "
       >
-        Smile Transformations
+        {t("title")}
       </h1>
 
       {/* DESCRIPTION */}
@@ -492,10 +494,16 @@ export default function Smile() {
           text-emerald-600
         "
       >
-        See the remarkable difference our expert dental care can make.
+        {/* See the remarkable difference our expert dental care can make.
         <br />
-        Before and after, the journey to your perfect smile begins here!
+        Before and after, the journey to your perfect smile begins here! */}
+
+        {t("desc1")} 
+        <br />
+        {t("desc2")}
+      
       </p>
+
 
       {/* BEFORE / AFTER BUTTONS */}
       <div className="mt-6 flex items-center gap-x-10">
@@ -505,6 +513,7 @@ export default function Smile() {
           onClick={() => setPosition(0)}
           className={`
             text-sm
+            hover:cursor-pointer
             font-bold
             transition-all
             duration-300
@@ -515,7 +524,7 @@ export default function Smile() {
             }
           `}
         >
-          BEFORE
+          {t("before")}
         </button>
 
         <button
@@ -523,6 +532,7 @@ export default function Smile() {
           onClick={() => setPosition(100)}
           className={`
             text-sm
+            hover:cursor-pointer
             font-bold
             transition-all
             duration-300
@@ -533,7 +543,7 @@ export default function Smile() {
             }
           `}
         >
-          AFTER
+          {t("after")}
         </button>
 
       </div>
