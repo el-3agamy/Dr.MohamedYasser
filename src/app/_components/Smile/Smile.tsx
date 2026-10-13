@@ -571,7 +571,7 @@ export default function Smile() {
         ========================== */}
 
         <Image
-          src="/dr.jfif"
+          src="/t.jpg"
           alt="Smile before treatment"
           fill
           priority
@@ -597,7 +597,7 @@ export default function Smile() {
         >
           <div className="relative h-[450px] w-[450px]">
             <Image
-              src="/dr.jfif"
+              src="/t.jpg"
               alt="Smile after treatment"
               fill
               priority
