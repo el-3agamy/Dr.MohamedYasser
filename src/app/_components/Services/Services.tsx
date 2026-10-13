@@ -54,9 +54,7 @@ export default function Services() {
                     servicesObjArr.map((obj )=>{
 
                         return(
-                            <>
                                     <ServiceCard  key={obj.id} obj ={obj}/>
-                            </>
                         )
                     })
               }
