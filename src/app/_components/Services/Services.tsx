@@ -49,13 +49,13 @@ export default function Services() {
              '>
                 Services We offer
             </h2>
-            <div className=" flex-wrap flex justify-start  my-5  w-full px-20 items-center gap-6">
+            <div className=" flex-wrap flex justify-start  my-5  w-full px-10 items-center gap-6">
               {
                     servicesObjArr.map((obj )=>{
 
                         return(
                             <>
-                                <ServiceCard  key={obj.id} obj ={obj}/>
+                                    <ServiceCard  key={obj.id} obj ={obj}/>
                             </>
                         )
                     })

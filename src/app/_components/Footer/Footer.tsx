@@ -1,7 +1,12 @@
 import React from 'react'
+import SocialMediaLinks from './SocialMediaLinks/SocialMediaLinks'
 
 export default function Footer() {
   return (
-    <div>Footer</div>
+    <>
+      <section className='py-14 flex justify-center items-center bg-emerald-100'>
+        <SocialMediaLinks />
+      </section>
+    </>
   )
 }

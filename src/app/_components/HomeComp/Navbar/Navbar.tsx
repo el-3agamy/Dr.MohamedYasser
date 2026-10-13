@@ -92,7 +92,9 @@ export default function Navbar() {
         <h1>{t("Mohamed Yasser")}</h1>
       </div>
 
-      <ul className="self-center flex-2 flex justify-between items-center gap-1 list-none bg-emerald-500 py-4 px-6 rounded-2xl">
+      {/* <ul className="self-center flex-2 flex justify-between items-center gap-1 list-none bg-emerald-500 py-4 px-6 rounded-2xl"> */}
+      <ul className="  self-center flex-2 flex  flex-col md:flex-row justify-between items-center gap-1 list-none bg-emerald-500 py-4 px-6 rounded-2xl
+      ">
         
         <li className="relative py-2 transition-colors duration-300 hover:text-white hover:cursor-pointer">
           {t("home")}

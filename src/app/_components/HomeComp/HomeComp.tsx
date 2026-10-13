@@ -4,7 +4,7 @@ import Navbar from "./Navbar/Navbar";
 export default function HomeComp() {
     return (
         <>
-            <main className="flex flex-col  w-screen h-screen bg-amber-100">
+            <main className="flex flex-col  w-full h-screen bg-amber-100">
                 <Navbar />
                 <Hero />
             </main>
