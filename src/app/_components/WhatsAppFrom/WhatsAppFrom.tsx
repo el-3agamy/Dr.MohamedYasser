@@ -113,12 +113,14 @@ export default function WhatsAppFrom() {
             
             <div className='w-[90%]'>
               <input 
+              
                 type="tel" 
                 required
                 inputMode='numeric' 
+                dir="auto"
                 value={whatsapp}
                 placeholder={t("whatsAppInputPlaceholder")}
-                className='bg-white w-full border border-emerald-200 rounded-[5px] py-[3px] px-[10px] focus:border-emerald-500 outline-0 focus:border-[2px]'
+                className='bg-white w-full border border-emerald-200 rounded-[5px] py-[3px] px-[10px] focus:border-emerald-500 outline-0 focus:border-[2px] text-right rtl:text-right'
                 onInput={(e) => {
                   const cleaned = e.currentTarget.value.replace(/\D/g, '');
                   setWhatsapp(cleaned);
