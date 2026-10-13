@@ -5,11 +5,11 @@ import "./Education.css";
 import Certificate from './Certificate/Certificate';
 
 const certificates = [
-  { id: 1, title: 'Bachelor Of Dental Medicine', src: '/dr.jfif' },
-  { id: 2, title: 'Master of Oral Surgery', src: '/dr.jfif' },
-  { id: 3, title: 'Dental Implantology Certificate', src: '/dr.jfif' },
-  { id: 4, title: 'Orthodontics Specialty', src: '/dr.jfif' },
-  { id: 5, title: 'Cosmetic Dentistry Diploma', src: '/dr.jfif' },
+  { id: 1, title: 'Bachelor Of Dental Medicine', src: "/t.jpg" },
+  { id: 2, title: 'Master of Oral Surgery', src: "/t.jpg" },
+  { id: 3, title: 'Dental Implantology Certificate', src: "/t.jpg" },
+  { id: 4, title: 'Orthodontics Specialty', src: "/t.jpg" },
+  { id: 5, title: 'Cosmetic Dentistry Diploma', src: "/t.jpg" },
 ]
 
 export default function Education() {

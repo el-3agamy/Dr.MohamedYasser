@@ -18,7 +18,7 @@ export default function About() {
           </p>
         </div>
         <div className='flex-1'>
-          <Image className='mx-auto' src={"/dr.jfif"} width={300} height={300} alt='Dr. Mohamed Yasser' />
+          <Image className='mx-auto' src={"/t.jpg"} width={300} height={300} alt='Dr. Mohamed Yasser' />
         </div>
       </article>
     </>
