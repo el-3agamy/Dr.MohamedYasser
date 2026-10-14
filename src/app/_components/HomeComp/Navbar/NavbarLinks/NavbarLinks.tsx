@@ -38,8 +38,6 @@ export default function NavbarLinks() {
       {/* Desktop Navbar */}
       <ul className="hidden md:flex flex-2 items-center justify-between
         gap-4 list-none bg-emerald-500 py-4 px-6 rounded-2xl">
-      {/* <ul className="hidden md:flex flex-2 items-center justify-between
-        gap-4 list-none bg-emerald-500 py-4 px-6 rounded-2xl"> */}
         {links.map((link) => (
           <li key={link.href}>
             <a

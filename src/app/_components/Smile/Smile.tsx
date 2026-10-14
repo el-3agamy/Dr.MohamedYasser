@@ -489,9 +489,12 @@ export default function Smile() {
       <p
         className="
           text-center
-          text-[18px]
+          md:text-[18px]
+          text-[14px]
           font-medium
           text-emerald-600
+          p-2
+          md:p-0 
         "
       >
         {/* See the remarkable difference our expert dental care can make.

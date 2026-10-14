@@ -1,26 +1,59 @@
-import Image from 'next/image'
-import { useTranslations } from 'next-intl'
-export default function About() {
+// import Image from 'next/image'
+// import { useTranslations } from 'next-intl'
+// export default function About() {
 
+//   const t = useTranslations("About");
+//   return (
+//     <>
+//       {/* Changed w-screen to w-full */}
+//       <article className='w-full p-6 md:p-11 flex flex-col-reverse justify-center items-center   md:justify-around md:items-center md:flex-row gap-10 bg-emerald-200'>
+//         <div className='flex-2 bg-amber-200'>
+//           <p>
+//             {
+//               t("bio")
+//             }
+//           </p>
+//         </div>
+//         <div className='flex-1 bg-red-300'>
+//           <Image className='mx-auto' src={"/t.jpg"}  width={380} height={300} alt='Dr. Mohamed Yasser' />
+//           {/* <Image className='mx-auto' src={"/t.jpg"}  fill alt='Dr. Mohamed Yasser' /> */}
+//           {/* <img className='mx-auto' src={"/t.jpg"}  alt='Dr. Mohamed Yasser' /> */}
+//         </div>
+//       </article>
+//     </>
+//   )
+// },
+
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+
+export default function About() {
   const t = useTranslations("About");
+
   return (
     <>
-      {/* Changed w-screen to w-full */}
-      <article className='w-full p-6 md:p-11 flex flex-col-reverse justify-center items-center   md:justify-around md:items-center md:flex-row gap-10 bg-emerald-200'>
-      {/* <article className="box-border w-full p-6 md:p-11
-  flex flex-col-reverse justify-center items-center
-  md:justify-around md:flex-row gap-10 bg-emerald-200"> */}
-        <div className='flex-2 bg-amber-200'>
+      <article className='w-full p-6 md:p-11 flex flex-col-reverse justify-center items-center md:justify-around md:items-center md:flex-row gap-10 bg-emerald-200'>
+        
+        {/* Bio Text */}
+        <div className='flex-2 bg-amber-200 p-4'>
           <p>
-            {
-              t("bio")
-            }
+            {t("bio")}
           </p>
         </div>
-        <div className='flex-1'>
-          <Image className='mx-auto' src={"/t.jpg"} width={300} height={300} alt='Dr. Mohamed Yasser' />
+
+        {/* Image Container */}
+        {/* 1. Added 'relative', a height class (e.g., h-72 or h-80), and w-full */}
+        <div className='md:flex-1 relative w-full h-72 md:h-96 bg-red-300 rounded-xl overflow-hidden'>
+          <Image 
+            src="/t.jpg" 
+            fill 
+            alt="Dr. Mohamed Yasser" 
+            className="object-cover object-center"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
         </div>
+
       </article>
     </>
-  )
+  );
 }
