@@ -464,15 +464,15 @@ export default function Smile() {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center gap-y-4 py-24">
+    <section className="flex flex-col items-center justify-center gap-y-4 py-24 bg-gold-50">
 
       {/* TITLE */}
       <h1
         className="
           relative
-          font-bold
-          text-2xl
-          text-emerald-800
+          font-black
+          text-5xl
+          text-emerald-900
           pb-2
           after:absolute
           after:bottom-0
@@ -491,8 +491,7 @@ export default function Smile() {
           text-center
           md:text-[18px]
           text-[14px]
-          font-medium
-          text-emerald-600
+          font-bold
           p-2
           md:p-0 
         "

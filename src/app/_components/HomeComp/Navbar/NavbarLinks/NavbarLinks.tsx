@@ -37,12 +37,12 @@ export default function NavbarLinks() {
     <>
       {/* Desktop Navbar */}
       <ul className="hidden md:flex flex-2 items-center justify-between
-        gap-4 list-none bg-emerald-500 py-4 px-6 rounded-2xl">
+        gap-4 list-none bg-emerald-900 text-gold-100 py-4 px-6 rounded-2xl">
         {links.map((link) => (
           <li key={link.href}>
             <a
               href={link.href}
-              className="py-2 transition-colors duration-300 hover:text-white"
+              className="py-2 transition-colors duration-300 hover:text-white text-2xl font-bold"
             >
               {link.label}
             </a>
@@ -56,7 +56,7 @@ export default function NavbarLinks() {
         onClick={() => setIsOpen(!isOpen)}
         aria-label={isOpen ? "Close menu" : "Open menu"}
         aria-expanded={isOpen}
-        className="md:hidden p-2 rounded-lg hover:bg-emerald-100"
+        className="md:hidden p-2 rounded-lg hover:bg-emerald-100 "
       >
         <MenuIcon open={isOpen} />
       </button>

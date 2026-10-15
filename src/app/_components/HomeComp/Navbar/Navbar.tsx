@@ -71,7 +71,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex items-center justify-between p-4 md:p-11 bg-emerald-200 gap-4">
+    <nav className="flex items-center justify-between p-4 md:p-7 bg-gold-50 gap-4">
       
       {/* 1. Logo */}
       <div className="flex items-center gap-2 hover:cursor-pointer">
@@ -87,7 +87,7 @@ export default function Navbar() {
       {/* 3. Actions & Mobile Controls Group */}
       <div className="flex items-center gap-3 md:gap-4">
         {/* Book Appointment (Visible on all or hidden on very small screens if needed) */}
-        <button className="bg-green-200 rounded-lg text-center py-2 px-3 md:px-4 text-sm md:text-base hover:cursor-pointer hover:bg-emerald-500 hover:text-white transition-all duration-300">
+        <button className="bg-green-900 text-gold-50 rounded-lg text-center py-2 px-3 md:px-4 text-sm md:text-base hover:cursor-pointer hover:bg-emerald-500 hover:text-white transition-all duration-300">
           {t("bookAppointment")}
         </button>
 

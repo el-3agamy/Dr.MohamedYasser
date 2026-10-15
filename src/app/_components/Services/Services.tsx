@@ -109,9 +109,10 @@ export default function Services() {
 
     return (
         <>
-            <section className='flex flex-col items-center justify-center gap-y-1  px-10'>
-                <h2 className='relative text-center font-bold text-2xl 
-                 text-emerald-500 after:absolute
+            {/* <section className='flex flex-col items-center justify-center gap-y-1  px-10 py-12 '> */}
+            <section className='flex flex-col items-center justify-center gap-y-1 py-16 px-10 bg-ivory-100 '>
+                <h2 className='relative text-center text-emerald-900 text-5xl font-black
+                 after:absolute mb-10
                     after:bottom-0 after:left-0 after:h-0.5 after:w-[100px]  after:bg-amber-300'>
                     {t("title")}
                 </h2>
