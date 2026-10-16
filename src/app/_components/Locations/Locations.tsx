@@ -39,36 +39,20 @@ export default function Locations() {
   ];
   return ( 
     <section className="flex flex-col items-center justify-center mx-auto max-w-7xl px-4 py-16 " id='locations' >
-      {/* <h1 className=" mb-8 text-center 
-           
-         
-          
-         
-          
-          
-          
-          
-          
-         
-
-          
-          ">
-        {t("title")}
-      </h1> */}
-
           <h1
         className="
         mb-20
           relative
           font-black
-          text-5xl
+          text-2xl
+          md:text-5xl
           text-emerald-900
           pb-2
           after:absolute
           after:bottom-0
-          after:left-0
-          after:h-[2px]
-          after:w-[270px]
+          after:start-0
+          after:h-0.5
+          after:w-full
           after:bg-amber-400
         "
       >

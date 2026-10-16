@@ -59,7 +59,7 @@
 //                         )
 //                     })
 //               }
-          
+
 //             </div>
 //         </section>
 //     </>
@@ -78,7 +78,7 @@ export type serviceObjType = {
 
 export default function Services() {
     const t = useTranslations("Services");
-    
+
     const servicesObjArr: serviceObjType[] = [
         {
             id: 1,
@@ -109,12 +109,28 @@ export default function Services() {
 
     return (
         <>
-            <section className='flex flex-col items-center justify-center gap-y-1 py-16 px-10 bg-ivory-100' id='services'>
-                <h2 className='relative  text-emerald-900 text-5xl font-black
-                 after:absolute mb-10 pb-2
-                    after:bottom-0 after:left-0 after:h-0.5 after:w-[250px]  after:bg-amber-400'>
-                    {t("title")}
-                </h2>
+            <section className='flex flex-col items-center justify-center gap-y-1 py-16 px-3 bg-ivory-100' id='services'>
+
+                <h1 className='  text-emerald-900 text-2xl md:text-5xl font-black  mb-10'>
+                    <span
+                        className='relative after:absolute after:start-0 after:bottom-0 after:h-0.5 after:w-full  pb-2 after:bg-amber-400'
+                    >
+                        {t("titleLined")}
+                    </span>
+                    {" "}
+                    {t("titleRest")}
+                </h1>
+                {/* DESCRIPTION */}
+                <p
+                    className="text-center md:text-[18px] text-[12px] font-bold  md:p-0 "
+                >
+
+
+                    {t("desc1")}
+                    <br />
+                    {t("desc2")}
+
+                </p>
                 <div className="flex-wrap flex justify-start items-center my-5 w-full px-10 gap-6 mx-auto">
                     {
                         servicesObjArr.map((obj) => {
@@ -130,4 +146,3 @@ export default function Services() {
 }
 
 
-   

@@ -80,22 +80,29 @@ export default function WhatsAppFrom() {
   return (
     <>
       <section className='w-screen py-16 flex flex-col gap-7 justify-center items-center bg-emerald-50' id='contact'>
-        <h2 className='mb-11 
-              relative
+        <h1 className='
+               mb-11 
                font-black
-               text-5xl
+               text-2xl
+               md:text-5xl
                text-emerald-900
-                pb-2
-              after:absolute
-              after:bottom-0
-              after:left-0
-              after:h-[2px]
-              after:w-[230px]
-              after:bg-amber-400
-              
-         '>
-          {t("title")}
-        </h2>
+               
+               
+               '>
+          <span 
+              className=' relative
+                          pb-2
+                          after:absolute
+                          after:bottom-0
+                          after:start-0
+                          after:h-0.5
+                          after:w-full
+                          after:bg-amber-400'
+          >
+            {t("titleLined")}
+          </span>
+          {t("titleRest")}
+        </h1>
         <div className='flex justify-center items-center w-screen'>
           <form
             onSubmit={handleSubmit}

@@ -46,20 +46,26 @@ export default function Smile() {
       {/* TITLE */}
       <h1
         className="
-          relative
+          mb-11
           font-black
-          text-5xl
+          text-2xl
+          md:text-5xl
           text-emerald-900
+
+        "
+      >
+        <span className="
+          relative
           pb-2
           after:absolute
           after:bottom-0
-          after:left-0
+          after:start-0
           after:h-[2px]
-          after:w-[170px]
-          after:bg-amber-400
-        "
-      >
-        {t("title")}
+          after:w-full
+          after:bg-amber-400" >
+                              {t("titleLined")}
+          </span>
+          {t("titleRest")}
       </h1>
 
       {/* DESCRIPTION */}
@@ -67,15 +73,13 @@ export default function Smile() {
         className="
           text-center
           md:text-[18px]
-          text-[14px]
+          text-[12px]
           font-bold
           p-2
           md:p-0 
         "
       >
-        {/* See the remarkable difference our expert dental care can make.
-        <br />
-        Before and after, the journey to your perfect smile begins here! */}
+        
 
         {t("desc1")} 
         <br />
