@@ -79,7 +79,7 @@ export default function WhatsAppFrom() {
 
   return (
     <>
-      <section className='w-screen py-16 flex flex-col gap-7 justify-center items-center bg-emerald-50' id='contact'>
+      <section className='w-screen py-16 flex flex-col gap-7 justify-center items-center bg-ivory-50' id='contact'>
         <h1 className='
                mb-11 
                font-black

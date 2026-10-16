@@ -50,15 +50,15 @@ export default function Hero() {
       </video>
 
       {/* Emerald overlay */}
-      <div className="absolute inset-0 -z-10 bg-emerald-950/30" />
+      <div className="absolute inset-0 -z-10 bg-black/60" />
 
       {/* Hero content */}
-      <div className="max-w-4xl text-ivory-100">
-        <h1 className="text-4xl font-bold leading-tight md:text-6xl">
+      <div className="max-w-4xl text-white">
+        <h1 className="text-3xl  font-bold leading-tight md:text-6xl">
           {t("title")}
         </h1>
 
-        <p className="mt-4 text-lg font-medium md:text-2xl">
+        <p className="mt-3 text-lg text-gold-300  font-bold md:text-2xl">
           {t("subtitle")}
         </p>
       </div>

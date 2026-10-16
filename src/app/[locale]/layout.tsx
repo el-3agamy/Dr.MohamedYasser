@@ -50,6 +50,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  icons : "/bridge.jpg" ,
   title: "Dr. Mohamed Yasser",
   description: "Dr. Mohamed Yasser Dental Clinic",
 };

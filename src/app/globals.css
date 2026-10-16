@@ -10,9 +10,13 @@
   }
 }
 :root {
-  --background: #d1fae5;
+  /* --background: #faf8f3; */
   --foreground: #171717;
   
+}
+
+html{
+  background-color:#faf8f3 ;
 }
 
 /* @theme inline {

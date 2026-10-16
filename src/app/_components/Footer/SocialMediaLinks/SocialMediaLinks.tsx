@@ -30,7 +30,7 @@ export default function SocialMediaLinks() {
     rel="noopener noreferrer"
     aria-label={name}
     style={{ "--hover-color": hoverColor } as React.CSSProperties}
-    className=" text-[var(--hover-color)] md:text-gray-600 transition-colors duration-200 hover:text-[var(--hover-color)]"
+    className=" text-[var(--hover-color)] md:text-gold-300 transition-colors duration-200 hover:text-[var(--hover-color)]"
   >
     <svg
       width="22"
