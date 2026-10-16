@@ -26,7 +26,7 @@ export default function NavbarLinks() {
    const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { label: t("home"), href: "#home" },
+    { label: t("home"), href: "#" },
     { label: t("about"), href: "#about" },
     { label: t("services"), href: "#services" },
     { label: t("contact"), href: "#contact" },
@@ -39,13 +39,24 @@ export default function NavbarLinks() {
       <ul className="hidden md:flex flex-2 items-center justify-between
         gap-4 list-none bg-emerald-900 text-gold-100 py-4 px-6 rounded-2xl">
         {links.map((link) => (
-          <li key={link.href}>
+          <li key={link.href}
+              className=""
+          
+          >
+          
             <a
-              href={link.href}
-              className="py-2 transition-colors duration-300 hover:text-white text-2xl font-bold"
-            >
-              {link.label}
-            </a>
+      href={link.href}
+      className="relative inline-block py-2 text-2xl font-bold
+                 text-white hover:text-white
+                 after:absolute after:bottom-0 after:left-0
+                 after:h-0.5 after:w-full after:bg-amber-200
+                 after:scale-x-0 after:origin-center
+                 after:transition-transform after:duration-700
+                 hover:after:scale-x-100"
+    >
+
+      {link.label}
+    </a>
           </li>
         ))}
       </ul>
@@ -71,15 +82,14 @@ export default function NavbarLinks() {
             className="fixed inset-0 z-40 bg-black/40 md:hidden"
           />
 
-          <nav className="fixed top-0 right-0 z-50 h-dvh w-72
-            max-w-[85vw] bg-white shadow-xl p-6 md:hidden">
+          <nav className="fixed top-0 bottom-0 right-0 z-50  w-72
+            max-w-[85vw] bg-ivory-200 shadow-xl p-6 md:hidden">
             <button
               type="button"
               onClick={() => setIsOpen(false)}
               aria-label="Close menu"
               className="mb-8"
             >
-              {/* <X size={28} /> */}
               <MenuIcon open={isOpen} />
             </button>
 
@@ -89,7 +99,7 @@ export default function NavbarLinks() {
                   <a
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className="block py-2 hover:text-emerald-600"
+                    className="block font-black text-[20px] py-2 hover:text-emerald-600"
                   >
                     {link.label}
                   </a>

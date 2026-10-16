@@ -5,7 +5,7 @@
     "services": "Services",
     "contact": "Contacts",
     "locations": "Locations",
-    "bookAppointment": "Book an appointment",
+    "bookAppointment": "Appointment",
     "Mohamed Yasser" :"Dr. Mohamed Yasser" ,
     "switchLanguage": "العربية"
   } ,
@@ -47,7 +47,7 @@
     }
   } ,
   "Contact" : {
-    "title" : "Contact Us.",
+    "title" : "Contact US.",
     "userNameInputPlaceholder" : "Enter Your Full Name",
     "whatsAppInputPlaceholder" : "Enter Your Whatsapp Number",
     "btn" : "Submit"

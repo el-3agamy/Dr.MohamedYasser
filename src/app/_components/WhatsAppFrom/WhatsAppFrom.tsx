@@ -46,11 +46,11 @@
 "use client"
 
 import { useState, useTransition } from 'react'
-import { submitToSheets } from '../../actions' 
+import { submitToSheets } from '../../actions'
 import { useTranslations } from 'next-intl'
 
 export default function WhatsAppFrom() {
-  const t = useTranslations("Contact") ;
+  const t = useTranslations("Contact");
   const [name, setName] = useState('')
   const [whatsapp, setWhatsapp] = useState('')
   const [statusMessage, setStatusMessage] = useState('')
@@ -79,20 +79,25 @@ export default function WhatsAppFrom() {
 
   return (
     <>
-      <section className='w-screen py-16 flex flex-col gap-7 justify-center items-center bg-emerald-50'>
-        <h2 className='mb-11 text-2xl font-bold text-emerald-800
+      <section className='w-screen py-16 flex flex-col gap-7 justify-center items-center bg-emerald-50' id='contact'>
+        <h2 className='mb-11 
               relative
+               font-black
+               text-5xl
+               text-emerald-900
+                pb-2
               after:absolute
               after:bottom-0
               after:left-0
               after:h-[2px]
-              after:w-[70px]
-              after:bg-amber-200
+              after:w-[230px]
+              after:bg-amber-400
+              
          '>
-         {t("title")}
+          {t("title")}
         </h2>
         <div className='flex justify-center items-center w-screen'>
-          <form 
+          <form
             onSubmit={handleSubmit}
             className='mx-auto w-[80%] min-h-56 p-6 border border-emerald-300 rounded-2xl
                     hover:border-emerald-500
@@ -101,8 +106,8 @@ export default function WhatsAppFrom() {
                     bg-white
            '>
             <div className='w-[90%]'>
-              <input 
-                type="text" 
+              <input
+                type="text"
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -110,13 +115,13 @@ export default function WhatsAppFrom() {
                 className='bg-white w-full border border-emerald-200 rounded-[5px] py-[3px] px-[10px] focus:border-emerald-500 outline-0 focus:border-[2px]'
               />
             </div>
-            
+
             <div className='w-[90%]'>
-              <input 
-              
-                type="tel" 
+              <input
+
+                type="tel"
                 required
-                inputMode='numeric' 
+                inputMode='numeric'
                 dir="auto"
                 value={whatsapp}
                 placeholder={t("whatsAppInputPlaceholder")}

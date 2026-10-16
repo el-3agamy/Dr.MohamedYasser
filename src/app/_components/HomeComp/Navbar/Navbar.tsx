@@ -56,6 +56,7 @@
 import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname } from "@/i18n/navigation";
 import NavbarLinks from "./NavbarLinks/NavbarLinks";
+import Image from "next/image";
 
 export default function Navbar() {
   const t = useTranslations("Navbar");
@@ -71,32 +72,37 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex items-center justify-between p-4 md:p-7 bg-gold-50 gap-4">
+    <nav className="fixed z-[9999999999] top-0 left-0 right-0 flex items-center justify-between p-4 md:p-7 bg-gold-50 gap-4">
       
       {/* 1. Logo */}
-      <div className="flex items-center gap-2 hover:cursor-pointer">
-        <span>Logo image</span>
-        <h1 className="font-semibold text-base md:text-lg">{t("Mohamed Yasser")}</h1>
+      <div className="f hover:cursor-pointer">
+        <a href="#" className="flex flex-col justify-center items-center ">
+          <span>Logo image</span>
+        <h1 className="font-black text-[10px] md:text-lg">{t("Mohamed Yasser")}</h1>
+        </a>
       </div>
 
       {/* 2. Desktop Navigation Links (Centered) */}
-      <div className="hidden md:flex flex-1 justify-center">
+      <div className="hidden md:flex flex-1 justify-center ">
         <NavbarLinks />
       </div>
 
       {/* 3. Actions & Mobile Controls Group */}
-      <div className="flex items-center gap-3 md:gap-4">
+      <div className="flex items-center gap-7  md:gap-4 ">
         {/* Book Appointment (Visible on all or hidden on very small screens if needed) */}
-        <button className="bg-green-900 text-gold-50 rounded-lg text-center py-2 px-3 md:px-4 text-sm md:text-base hover:cursor-pointer hover:bg-emerald-500 hover:text-white transition-all duration-300">
-          {t("bookAppointment")}
+        <button className="bg-emerald-700 text-amber-100 font-black  rounded-lg text-center py-5 px-3 md:px-4 text-sm md:text-2xl  hover:cursor-pointer hover:bg-emerald-500 hover:text-white transition-all duration-300">
+          <a href="#contact">{t("bookAppointment")}</a>
         </button>
 
         {/* Language Switcher */}
         <button 
-          className="hover:cursor-pointer p-2 font-medium text-sm md:text-base"
+          className="hover:cursor-pointer p-2 text-sm md:text-base flex flex-col-reverse items-center justify-center font-bold "
           onClick={switchLanguage}
         >
-          {locale === "ar" ? "English" : "العربية"}
+          {locale === "ar" ? <>English <br/><Image src={"/english.png"} height={30} width={30} alt="English Lang" title="USA FLag" /></> 
+            : 
+          <>العربية <br/> <Image src={"/arabic.png"} height={30} width={30} alt="Arabic Lang" title="Egypt FLag" /></>
+          }
         </button>
 
         {/* Mobile Burger Menu */}

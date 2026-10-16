@@ -38,10 +38,42 @@ export default function Locations() {
     },
   ];
   return ( 
-    <section className="mx-auto max-w-7xl px-4 py-16 ">
-      <h2 className="mb-8 text-center text-emerald-900 text-3xl font-bold">
+    <section className="flex flex-col items-center justify-center mx-auto max-w-7xl px-4 py-16 " id='locations' >
+      {/* <h1 className=" mb-8 text-center 
+           
+         
+          
+         
+          
+          
+          
+          
+          
+         
+
+          
+          ">
         {t("title")}
-      </h2>
+      </h1> */}
+
+          <h1
+        className="
+        mb-20
+          relative
+          font-black
+          text-5xl
+          text-emerald-900
+          pb-2
+          after:absolute
+          after:bottom-0
+          after:left-0
+          after:h-[2px]
+          after:w-[270px]
+          after:bg-amber-400
+        "
+      >
+        {t("title")}
+      </h1>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {branches.map((branch) => (

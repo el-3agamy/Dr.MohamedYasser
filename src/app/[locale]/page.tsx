@@ -31,14 +31,16 @@ import WhatsAppFrom from "../_components/WhatsAppFrom/WhatsAppFrom";
 export default function Home() {
   return (
     <>
-      <HomeComp />
-      <About />
-      <Education />
-      <Smile />
-      <Services />
-      <WhatsAppFrom />
-      <Locations />
-      <Footer />
+      <div className="relative">
+        <HomeComp />
+        <About />
+        <Education />
+        <Smile />
+        <Services />
+        <WhatsAppFrom />
+        <Locations />
+        <Footer />
+      </div>
     </>
   );
 }
