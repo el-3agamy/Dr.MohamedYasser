@@ -1,5 +1,4 @@
 "use client";
-import { usePathname } from 'next/navigation';
 import ServiceCard from './ServiceCard/ServiceCard'
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/router';
@@ -13,7 +12,6 @@ export type serviceObjType = {
 };
 
 const navigateToSpecificService = () => {
-    const path = usePathname();
 }
 export default function Services() {
     const locale = useLocale();
@@ -66,7 +64,7 @@ export default function Services() {
 
     return (
         <>
-            <section onClick={() => { }}
+            <section 
                 className='flex flex-col items-center justify-center gap-y-1 py-16 px-3 bg-ivory-100' id='services'>
 
                 <h1 className='  text-emerald-900 text-2xl md:text-5xl font-black  mb-10'>
@@ -89,7 +87,10 @@ export default function Services() {
                     {t("desc2")}
 
                 </p>
-                <div className="flex-wrap flex justify-start items-center my-5 w-full px-10 gap-6 mx-auto">
+
+                {/* =================== Cards Container ============= */}
+                {/* <div className='bg-emerald-500 flex flex-col justify-center items-center'> */}
+                    <div className=" flex flex-col items-center justify-center flex-wrap md:flex-row md:justify-start   my-5  md:w-275  md:px-0  gap-6 ">
                     {servicesObjArr.map((obj) => (
                         <ServiceCard
                             key={obj.id}
@@ -98,6 +99,7 @@ export default function Services() {
                         />
                     ))}
                 </div>
+                {/* </div> */}
             </section>
         </>
     )
