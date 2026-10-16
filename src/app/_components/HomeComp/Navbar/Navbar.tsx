@@ -78,7 +78,7 @@ export default function Navbar() {
       <div className="f hover:cursor-pointer">
         <a href="#" className="flex flex-col justify-center items-center ">
           <span>Logo image</span>
-        <h1 className="font-black text-[10px] md:text-lg">{t("Mohamed Yasser")}</h1>
+        <h1 className="font-black text-[11px] md:text-lg">{t("Mohamed Yasser")}</h1>
         </a>
       </div>
 
@@ -91,7 +91,7 @@ export default function Navbar() {
       <div className="flex items-center gap-7  md:gap-4 ">
         {/* Book Appointment (Visible on all or hidden on very small screens if needed) */}
         <button className="bg-emerald-700 text-amber-100 font-black  rounded-lg text-center py-5 px-3 md:px-4 text-sm md:text-2xl  hover:cursor-pointer hover:bg-emerald-500 hover:text-white transition-all duration-300">
-          <a href="#contact">{t("bookAppointment")}</a>
+          <a href="https://elagamiabdalla-lgtm.github.io/Dr-Mhmd-Yasser-booking/?source=Instagram&campaign=Bookings&medium=Bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAadWlmzIkBNZ6YIeS_HOt8KUDUOnEkb7xXD7D4_aXAZl5ZNhs9TQ3YV9LpdnZA_aem_bsJT0_PtIdSroIYEfc8BZQ">{t("bookAppointment")}</a>
         </button>
 
         {/* Language Switcher */}
