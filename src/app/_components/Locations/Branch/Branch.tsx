@@ -43,7 +43,7 @@ export default function BranchCard({
           href={directionsUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block rounded-lg bg-blue-600 px-5 py-3 text-white"
+          className="inline-block rounded-lg bg-emerald-700 hover:bg-emerald-500  px-5 py-3 text-white"
         >
           {t("getDir")}
         </a>

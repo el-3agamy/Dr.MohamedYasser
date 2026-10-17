@@ -40,6 +40,7 @@ import { routing } from "@/i18n/routing";
 import "../globals.css";
 import Navbar from "../_components/HomeComp/Navbar/Navbar";
 import Footer from "../_components/Footer/Footer";
+import DentalChatWidget from "../_components/DentalChatWidget/DentalChatWidget";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -84,6 +85,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}
+          <DentalChatWidget />
           <Footer />
         </NextIntlClientProvider>
       </body>
