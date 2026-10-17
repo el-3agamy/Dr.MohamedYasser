@@ -42,7 +42,7 @@ export default function About() {
 
         <div className='md:flex-1 relative w-full h-72 md:h-96 bg-red-300 rounded-xl overflow-hidden'>
           <Image
-            src="/t.jpg"
+            src="/dr.jpeg"
             fill
             alt="Dr. Mohamed Yasser"
             className="object-cover object-center"
