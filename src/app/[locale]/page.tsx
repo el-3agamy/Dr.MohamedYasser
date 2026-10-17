@@ -39,7 +39,7 @@ export default function Home() {
         <Services />
         <WhatsAppFrom />
         <Locations />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );

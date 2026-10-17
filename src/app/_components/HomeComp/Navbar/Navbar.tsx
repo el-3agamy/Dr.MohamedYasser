@@ -76,7 +76,7 @@ export default function Navbar() {
       
       {/* 1. Logo */}
       <div className="f hover:cursor-pointer">
-        <a href="#" className="flex flex-col justify-center items-center ">
+        <a href="/#" className="flex flex-col justify-center items-center ">
           <span>Logo image</span>
         <h1 className="font-black text-[11px] md:text-lg">{t("Mohamed Yasser")}</h1>
         </a>

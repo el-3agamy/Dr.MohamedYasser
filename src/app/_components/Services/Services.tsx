@@ -1,8 +1,8 @@
 "use client";
 import ServiceCard from './ServiceCard/ServiceCard'
-import { useTranslations } from 'next-intl';
-import { useRouter } from 'next/router';
 import { useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
+import { getServicesObjArr } from "../../../data/servicesData";
 export type serviceObjType = {
     id: number;
     title: string;
@@ -11,56 +11,12 @@ export type serviceObjType = {
     discover: string
 };
 
-const navigateToSpecificService = () => {
-}
+
 export default function Services() {
     const locale = useLocale();
     const t = useTranslations("Services");
+    const servicesObjArr = getServicesObjArr(t);
 
-    const servicesObjArr: serviceObjType[] = [
-        {
-            id: 1,
-            title: t("serviceOne.tit"),
-            body: t("serviceOne.desc"),
-            img: "/brace.jpg",
-            discover: t("serviceOne.discover")
-        },
-        {
-            id: 2,
-            title: t("serviceTwo.tit"),
-            body: t("serviceTwo.desc"),
-            img: "/bridge.jpg",
-            discover: t("serviceOne.discover")
-        },
-        {
-            id: 3,
-            title: t("serviceThree.tit"),
-            body: t("serviceThree.desc"),
-            img: "/child.jpg",
-            discover: t("serviceOne.discover")
-        },
-        {
-            id: 4,
-            title: t("serviceFour.tit"),
-            body: t("serviceFour.desc"),
-            img: "/rootCare.jpg",
-            discover: t("serviceOne.discover")
-        },
-        {
-            id: 5,
-            title: t("serviceFive.tit"),
-            body: t("serviceFive.desc"),
-            img: "/white.png",
-            discover: t("serviceOne.discover")
-        },
-        {
-            id: 6,
-            title: t("serviceSix.tit"),
-            body: t("serviceSix.desc"),
-            img: "/pain.jpg",
-            discover: t("serviceOne.discover")
-        },
-    ];
 
     return (
         <>

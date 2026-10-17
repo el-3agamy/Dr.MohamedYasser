@@ -26,11 +26,11 @@ export default function NavbarLinks() {
    const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { label: t("home"), href: "#" },
-    { label: t("about"), href: "#about" },
-    { label: t("services"), href: "#services" },
-    { label: t("contact"), href: "#contact" },
-    { label: t("locations"), href: "#locations" },
+    { label: t("home"), href: "/#" },
+    { label: t("about"), href: "/#about" },
+    { label: t("services"), href: "/#services" },
+    { label: t("contact"), href: "/#contact" },
+    { label: t("locations"), href: "/#locations" },
   ];
 
   return (

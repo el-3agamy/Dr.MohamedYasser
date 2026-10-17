@@ -95,15 +95,15 @@ export default function Smile() {
           type="button"
           onClick={() => setPosition(0)}
           className={`
-            text-sm
+            text-2xl
             hover:cursor-pointer
             font-bold
             transition-all
             duration-300
             ${
               position < 50
-                ? "text-emerald-800"
-                : "text-gray-400"
+                ? "text-emerald-900"
+                : "text-emerald-400"
             }
           `}
         >
@@ -114,15 +114,15 @@ export default function Smile() {
           type="button"
           onClick={() => setPosition(100)}
           className={`
-            text-sm
+            text-2xl
             hover:cursor-pointer
             font-bold
             transition-all
             duration-300
             ${
               position >= 50
-                ? "text-emerald-800"
-                : "text-gray-400"
+                ? "text-emerald-900"
+                : "text-emerald-400"
             }
           `}
         >
@@ -131,6 +131,11 @@ export default function Smile() {
 
       </div>
 
+
+
+
+{/* ========================================================================================= */}
+     
       {/* IMAGE COMPARISON */}
       <div
         ref={sliderRef}
@@ -154,7 +159,7 @@ export default function Smile() {
         ========================== */}
 
         <Image
-          src="/t.jpg"
+          src="/beforeWhite.jpg"
           alt="Smile before treatment"
           fill
           priority
@@ -180,7 +185,7 @@ export default function Smile() {
         >
           <div className="relative h-[450px] w-[450px]">
             <Image
-              src="/t.jpg"
+              src="/afterWhite.jpg"
               alt="Smile after treatment"
               fill
               priority
@@ -189,6 +194,15 @@ export default function Smile() {
             />
           </div>
         </div>
+
+
+{/* ========================================================================== */}
+
+
+
+
+
+
 
         {/* =========================
             DIVIDER

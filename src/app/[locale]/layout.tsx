@@ -38,6 +38,8 @@ import { notFound } from "next/navigation";
 
 import { routing } from "@/i18n/routing";
 import "../globals.css";
+import Navbar from "../_components/HomeComp/Navbar/Navbar";
+import Footer from "../_components/Footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -80,7 +82,9 @@ export default async function LocaleLayout({
     >
       <body className="min-h-full  flex flex-col">
         <NextIntlClientProvider messages={messages}>
+          <Navbar />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
