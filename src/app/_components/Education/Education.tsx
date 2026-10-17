@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import "./Education.css";
 import Certificate from './Certificate/Certificate';
 

@@ -1,5 +1,6 @@
 "use client";
 
+import { useLocale, useTranslations } from "next-intl";
 import React, { useState, useRef, useEffect } from "react";
 
 interface Message {
@@ -9,19 +10,20 @@ interface Message {
 }
 
 export default function DentalChatWidget() {
+  const locale = useLocale() ;
+  const t = useTranslations("ChatWidget") ;
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      content:
-        "Hello! 👋 Welcome to Dr. Yasser Dental Clinic. How can I help you today?",
+      content:t("welcomeMsg"),
     },
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const chatEndRef = useRef<HTMLDivElement>(null);
 
-  const whatsappNumber = process.env.NEXT_PUBLIC_CLINIC_WHATSAPP_NUMBER || "201000000000";
+  const whatsappNumber = process.env.NEXT_PUBLIC_CLINIC_WHATSAPP_NUMBER || "01092901881";
 
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -94,17 +96,23 @@ export default function DentalChatWidget() {
   };
 
   return (
-    <div className="fixed bottom-5 right-5 z-[9999999999999999999999] font-sans">
+    // <div className="fixed bottom-5 right-5 z-[9999999999999999999999] font-sans">
+    // <div className="fixed bottom-5 right-5 z-[9999999999999999999999] font-sans">
+    <div
+  className={`fixed bottom-22.5 md:bottom-5 z-[9999999999999999999999] font-sans ${
+    locale === "ar" ? "left-5" : "right-5"
+  }`}
+>
       {/* Toggle Button */}
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-3 rounded-full shadow-lg transition-transform hover:scale-105"
+          className="flex items-center gap-2 bg-emerald-800 hover:bg-emerald-500 hover:cursor-pointer text-white font-medium px-4 py-3 rounded-full shadow-lg transition-transform hover:scale-105"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
           </svg>
-          <span>Chat with Assistant</span>
+          <span>{t("chatBotTitle")}</span>
         </button>
       )}
 
@@ -118,15 +126,15 @@ export default function DentalChatWidget() {
                 🦷
               </div>
               <div>
-                <h3 className="font-semibold text-sm">Dental Assistant</h3>
+                <h3 className="font-semibold text-sm">{t("chatBotName")}</h3>
                 <span className="text-xs text-blue-100 flex items-center gap-1">
-                  <span className="w-2 h-2 rounded-full bg-green-400 inline-block"></span> Online
+                  <span className="w-2 h-2 rounded-full bg-green-400 inline-block"></span> {t("online")}
                 </span>
               </div>
             </div>
             <button
               onClick={() => setIsOpen(false)}
-              className="text-white/80 hover:text-white p-1 rounded-lg"
+              className="text-white/80 hover:text-white  p-1 rounded-lg hover:cursor-pointer "
             >
               ✕
             </button>
@@ -159,7 +167,7 @@ export default function DentalChatWidget() {
                     rel="noopener noreferrer"
                     className="mt-2 inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white px-3.5 py-2 rounded-xl text-xs font-semibold shadow transition-all hover:scale-102"
                   >
-                    <span>Chat on WhatsApp</span>
+                    <span>{t("whatsappConvert")}</span>
                     <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                       <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
                     </svg>
@@ -170,7 +178,7 @@ export default function DentalChatWidget() {
 
             {loading && (
               <div className="flex items-center gap-2 text-gray-400 text-xs py-2">
-                <span className="animate-pulse">Assistant is typing...</span>
+                <span className="animate-pulse">{t("typing")}</span>
               </div>
             )}
             <div ref={chatEndRef} />
@@ -183,7 +191,7 @@ export default function DentalChatWidget() {
           >
             <input
               type="text"
-              placeholder="Ask a question..."
+              placeholder={t("askPlaceholder")}
               value={input}
               onChange={(e) => setInput(e.target.value)}
               className="flex-1 bg-gray-100 text-gray-800 rounded-xl px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"

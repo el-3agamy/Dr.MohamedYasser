@@ -1,8 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { NextResponse } from "next/server";
 
-// Initialize with the API key explicitly
-// const ai = new GoogleGenAI({});
+
 const apiKey = process.env.GEMINI_API_KEY;
 const ai = new GoogleGenAI(apiKey ? { apiKey } : {});
 
@@ -10,7 +9,7 @@ const SYSTEM_INSTRUCTION = `
 You are the virtual assistant for Dr. Yasser Dental Clinic. Your job is to assist visitors with information about dental services, office hours, pricing estimates, location, and general pre-appointment queries.
 
 CLINIC INFORMATION:
-- Location: Cairo, Egypt (5th Settlement / Sheikh Zayed)
+- Location: Gharbayia, Egypt (Bassyon /  Tanta )
 - Working Hours: Daily from 2:00 PM to 10:00 PM (Closed Fridays)
 - Emergency Services: Available via WhatsApp request.
 - Key Services: Dental Implants, Cosmetic Dentistry (Veneers, Teeth Whitening), Root Canal Therapy, Orthodontics, Routine Cleanings.
@@ -21,7 +20,7 @@ RULES & BOUNDARIES:
 3. If a user asks a highly specific medical question, asks about complex symptoms (e.g., severe acute infection, trauma), asks for specific direct doctor confirmation, or explicitly wants to book an appointment/consultation, instruct them to speak directly with the clinic staff on WhatsApp.
 4. If you do NOT know the answer to a specific question, respond gracefully and suggest transferring to WhatsApp.
 5. Whenever you suggest transfer to WhatsApp, end your answer with the marker tag: [ACTION:WHATSAPP_TRANSFER].
-
+6. Always respond in max 15 words.
 Keep answers clear, concise, and easy to read.
 `;
 

@@ -89,5 +89,14 @@
       "addressTitle" : "Nasr City Branch", 
       "address" : "21st - Al-Nahas - Nasr City" 
     }
-  }
+  } , 
+    "ChatWidget" :{
+      "chatBotTitle" : "Chat with Assistant" ,
+      "welcomeMsg" : "Hello! 👋 Welcome to Dr. Yasser Dental Clinic. How can I help you today?",
+      "online" : "Online" ,
+      "chatBotName" : "Dental Assistant" ,
+      "whatsappConvert" : "Chat on WhatsApp" ,
+      "typing" : "Assistant is typing..." ,
+      "askPlaceholder" :"Ask a question..."
+    }
 }
