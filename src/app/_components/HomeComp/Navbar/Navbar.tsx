@@ -72,7 +72,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed z-[9999999999] top-0 left-0 right-0 flex items-center justify-between p-4 md:p-7 bg-gold-50 gap-4">
+    <nav className="fixed z-[99999999] top-0 left-0 right-0 flex items-center justify-between p-4 md:p-7 bg-gold-50 gap-4">
       
       {/* 1. Logo */}
       <div className="f hover:cursor-pointer">

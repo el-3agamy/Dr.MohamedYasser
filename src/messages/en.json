@@ -64,7 +64,9 @@
     "titleRest" : "US.",
     "userNameInputPlaceholder" : "Enter Your Full Name",
     "whatsAppInputPlaceholder" : "Enter Your Whatsapp Number",
-    "btn" : "Submit"
+    "btn" : "Submit",
+    "sucessStatusMsg" : "Thank you! Your details have been saved.",
+    "faildStatusMsg" : "Something went wrong. Please try again."
   } , 
   "Locations" : {
     "title" : "Locations." ,

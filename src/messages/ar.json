@@ -62,7 +62,9 @@
     "titleRest": " بنا",
     "userNameInputPlaceholder": "أدخل اسمك",
     "whatsAppInputPlaceholder": "أدخل رقم الواتساب الخاص بك",
-    "btn": "أرسل"
+    "btn": "أرسل" ,
+    "sucessStatusMsg" : "شكرًا لك! تم حفظ بياناتك.✅✅✅",
+    "faildStatusMsg" : "حدث خطأ ما. يرجى المحاولة مجدداً.❌"
   },
   "Locations": {
     "title": "فروعنا",

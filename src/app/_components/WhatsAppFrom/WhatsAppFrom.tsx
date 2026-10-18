@@ -67,13 +67,18 @@ export default function WhatsAppFrom() {
 
       if (result.success) {
         setIsSuccess(true)
-        setStatusMessage('Thank you! Your details have been saved.')
+        setStatusMessage(t("sucessStatusMsg"))
         setName('')
         setWhatsapp('')
       } else {
         setIsSuccess(false)
-        setStatusMessage('Something went wrong. Please try again.')
+        setStatusMessage(t("faildStatusMsg"))
       }
+
+      setTimeout(() => {
+        setStatusMessage("")
+      }, 3000);
+
     })
   }
 
@@ -89,8 +94,8 @@ export default function WhatsAppFrom() {
                
                
                '>
-          <span 
-              className=' relative
+          <span
+            className=' relative
                           pb-2
                           after:absolute
                           after:bottom-0
@@ -151,10 +156,27 @@ export default function WhatsAppFrom() {
             </div>
 
             {statusMessage && (
-              <p className={`text-sm mt-2 font-medium ${isSuccess ? 'text-emerald-700' : 'text-red-600'}`}>
+              <p  className={`text-[18px] mt-2 font-medium absolute bg-ivory-100  w-[110%] h-[150%] md:text-3xl  flex justify-center items-center  ${isSuccess ? 'text-emerald-700' : 'text-red-600'}`}>
                 {statusMessage}
               </p>
             )}
+
+
+            {/* {statusMessage && (
+              <div
+                role="status"
+                aria-live="polite"
+                className="fixed inset-0 z-9999999999999999999999999999999 flex items-center justify-center bg-black/40 p-4"
+              >
+                <div
+                  className={`rounded-2xl bg-white w-[300px] h-[300px] md:w-[450px] md:h-[450px]  p-8 text-center text-xl font-bold shadow-2xl
+        ${isSuccess ? 'text-emerald-700' : 'text-red-600'}`}
+                >
+                  { statusMessage}
+                </div>
+              </div>
+            )} */}
+
           </form>
         </div>
       </section>
