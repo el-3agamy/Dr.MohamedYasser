@@ -1,4 +1,8 @@
 {
+  "MetaData" : {
+      "websiteTitle" : "Dentist in Egypt | Dr. Mohamed Yasser " ,
+      "websiteDescription" : "Dr. Mohamed Yasser Dental Clinic in Egypt located in Gharbia governorate specifically in Bassyon & Tanta"
+  },
   "Navbar": {
     "home": "Home",
     "about": "About",
