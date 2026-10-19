@@ -51,7 +51,7 @@ export default function Services() {
                         <ServiceCard
                             key={obj.id}
                             obj={obj}
-                            href={`/${locale}/services/${obj.id}`}
+                            // href={`/${locale}/services/${obj.id}`}
                         />
                     ))}
                 </div>

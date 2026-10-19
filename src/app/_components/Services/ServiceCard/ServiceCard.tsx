@@ -5,13 +5,13 @@ import { serviceObjType } from "../Services";
 
 export default function ServiceCard({
   obj,
-  href,
+//   href,
 }: {
   obj: serviceObjType;
-  href: string;
+//   href: string;
 }) {
     return (
-        <Link href={href} className=" w-[350px] h-[400px] md:h-[350px]  " > 
+        // <Link href={href} className=" w-[350px] h-[400px] md:h-[350px]  " > 
             <article className="overflow-hidden h-full  w-full  md:w-[350px] md:h-[350px] border rounded-3xl border-emerald-400 hover:cursor-pointer hover:border-emerald-700">
             {/* <article className="overflow-hidden w-[450px] h-[400px] md:w-[350px] md:h-[350px] border rounded-3xl border-emerald-400 hover:cursor-pointer hover:border-emerald-700"> */}
             <figure className="flex flex-col h-full w-full">
@@ -45,6 +45,6 @@ export default function ServiceCard({
                 </figcaption>
             </figure>
         </article>
-        </Link>
+        // </Link>
     );
 }

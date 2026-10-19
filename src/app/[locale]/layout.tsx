@@ -85,7 +85,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}
-          <DentalChatWidget />
+          {/* <DentalChatWidget /> */}
           <Footer />
         </NextIntlClientProvider>
       </body>

@@ -19,10 +19,9 @@ export default function Certificate({item} :CertificateProps) {
                 src={item.src}
                 alt={item.title}
                 fill
-                className="object-cover"
               />
             </div>
-            <figcaption className="mt-3 text-white font-medium">
+            <figcaption className="mt-3 text-ivory-300  font-bold">
               {item.title}
             </figcaption>
           </figure>

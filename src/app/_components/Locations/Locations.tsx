@@ -60,8 +60,8 @@ export default function Locations() {
       </h1>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {branches.map((branch) => (
-          <BranchCard key={branch.name} {...branch} />
+        {branches.map((branch , ind) => (
+          <BranchCard key={ind} {...branch} />
         ))}
       </div>
     </section>
