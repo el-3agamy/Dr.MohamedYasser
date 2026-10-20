@@ -76,12 +76,12 @@
     "title" : "Locations." ,
     "getDir" : "Get Directions",
     "firstLocation" : {
-      "addressTitle" : "Nasr City Branch", 
-      "address" : "21st - Al-Nahas - Nasr City" 
+      "addressTitle" : "Bassyon City Branch", 
+      "address" : "Qaransho - Bassyon City" 
     },
     "secondLocation" : {
-      "addressTitle" : "Nasr City Branch", 
-      "address" : "21st - Al-Nahas - Nasr City" 
+      "addressTitle" : "Tanta City Branch", 
+      "address" : "Kharsit - Tanta City" 
     },
     "thirdLocation" : {
       "addressTitle" : "Nasr City Branch", 
