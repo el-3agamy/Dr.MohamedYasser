@@ -70,7 +70,9 @@
     "whatsAppInputPlaceholder" : "Enter Your Whatsapp Number",
     "btn" : "Submit",
     "sucessStatusMsg" : "Thank you! Your details have been saved.",
-    "faildStatusMsg" : "Something went wrong. Please try again."
+    "faildStatusMsg" : "Something went wrong. Please try again." ,
+    "nameInputValidation" : "Please enter a valid name using letters only  min 3 max 21",
+    "whatsappNumberValidation" : "Enter a valid Egyptian mobile number: 010, 011, 012 or 015 followed by 8 digits."
   } , 
   "Locations" : {
     "title" : "Locations." ,

@@ -68,7 +68,9 @@
     "whatsAppInputPlaceholder": "أدخل رقم الواتساب الخاص بك",
     "btn": "أرسل" ,
     "sucessStatusMsg" : "شكرًا لك! تم حفظ بياناتك.✅✅✅",
-    "faildStatusMsg" : "حدث خطأ ما. يرجى المحاولة مجدداً.❌"
+    "faildStatusMsg" : "حدث خطأ ما. يرجى المحاولة مجدداً.❌",
+    "nameInputValidation" :  "الرجاء إدخال اسم صحيح باستخدام الأحرف فقط، الحد الأدنى 3 أحرف، الحد الأقصى 21 حرفًا",
+    "whatsappNumberValidation" : "أدخل رقم هاتف محمول مصرياً صحيحاً."
   },
   "Locations": {
     "title": "فروعنا",

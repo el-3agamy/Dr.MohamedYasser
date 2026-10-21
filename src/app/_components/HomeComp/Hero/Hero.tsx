@@ -1,35 +1,7 @@
-// import React from 'react'
-// import { useTranslations } from "next-intl";
-
-// export default function Hero() {
-//   const t = useTranslations("Hero") ;
-//   return (
-//     <>
-//         <section 
-//                 className=' relative bg-emerald-800 text-ivory-100 flex justify-center items-center text-center 
-//                 font-bold text-4xl h-[100%] '>
-//             <video 
-//                 src={"/backGroundVideo.mp4"}
-//                 autoPlay
-//                 muted
-//                 loop
-//                 playsInline
-//                 poster=''
-//                 className='absloute'
-//             >
-
-//               <source src="/backGroundVideo.mp4" type='video/mp4'/>
-//             </video>
-//             <p>{t("title")}<br /> {t("subtitle")}</p>
-//         </section>
-//     </>
-//   )
-// }
-
 
 import React from "react";
 import { useTranslations } from "next-intl";
-
+import {Suspense} from "react"
 export default function Hero() {
   const t = useTranslations("Hero");
 
@@ -37,8 +9,10 @@ export default function Hero() {
     <section className="relative isolate flex min-h-screen items-center
       justify-center overflow-hidden bg-emerald-950 px-6 text-center">
 
+      {/* <Suspense  fallback= {<p>video is loading ....</p>}> */}
+      
       {/* Background video */}
-      <video
+    <video
         autoPlay
         muted
         loop
@@ -48,6 +22,8 @@ export default function Hero() {
       >
         <source src="/backGroundVideo.mp4" type="video/mp4" />
       </video>
+
+      {/* </Suspense> */}
 
       {/* Emerald overlay */}
       <div className="absolute inset-0 -z-10 bg-black/60" />
