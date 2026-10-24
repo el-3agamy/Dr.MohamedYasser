@@ -84,16 +84,17 @@
       "address": " خرسيت - مدينة طنطا "
     },
     "thirdLocation": {
-      "addressTitle": "فرع مدينة نصر",
-      "address": "21 - النحاس - مدينة نصر"
+      "addressTitle": " فرع مدينة تلا",
+      "address": " زینارة - تلا - المنوفية "
+
     },
     "fourthLocation": {
-      "addressTitle": "فرع مدينة نصر",
-      "address": "21 - النحاس - مدينة نصر"
+      "addressTitle": " فرع مدينة كفر الزيات",
+      "address": "قليب ابيار - كفر الزيات - الغربية"
     },
     "fivthLocation": {
       "addressTitle": "فرع مدينة نصر",
-      "address": "21 - النحاس - مدينة نصر"
+      "address": "محلة روح - طنطا - الغربية"
     }
   } ,
   "ChatWidget" :{
