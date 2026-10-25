@@ -112,6 +112,7 @@ import { routing } from "@/i18n/routing";
 import "../globals.css";
 import Navbar from "../_components/HomeComp/Navbar/Navbar";
 import Footer from "../_components/Footer/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const BASE_URL = "https://dr-mohamed-yasser-swart.vercel.app";
 
@@ -225,11 +226,12 @@ export default async function LocaleLayout({
       } ${geistMono.variable} h-full antialiased max-w-full overflow-x-hidden`}
     >
       <body className="min-h-full flex flex-col">
-        <NextIntlClientProvider messages={messages}>
+            <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}
           <Footer />
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
