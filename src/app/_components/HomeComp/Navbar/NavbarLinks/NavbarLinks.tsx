@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import Link from "next/link";
 function MenuIcon({ open }: { open: boolean }) {
   return (
     <svg
@@ -22,15 +23,16 @@ function MenuIcon({ open }: { open: boolean }) {
   );
 }
 export default function NavbarLinks() {
+
     const t = useTranslations("Navbar");
    const [isOpen, setIsOpen] = useState(false);
-
+ const locale =   useLocale()
   const links = [
-    { label: t("home"), href: "/#" },
-    { label: t("about"), href: "/#about" },
-    { label: t("services"), href: "/#services" },
-    { label: t("contact"), href: "/#contact" },
-    { label: t("locations"), href: "/#locations" },
+    { label: t("home"), href: "#" },
+    { label: t("about"), href: "#about" },
+    { label: t("services"), href: "#services" },
+    { label: t("contact"), href: "#contact" },
+    { label: t("locations"), href: "#locations" },
   ];
 
   return (
@@ -38,13 +40,11 @@ export default function NavbarLinks() {
       {/* Desktop Navbar */}
       <ul className="hidden md:flex flex-2 items-center justify-between
         gap-4 list-none bg-emerald-900 text-gold-100 py-4 px-6 rounded-2xl">
+
         {links.map((link) => (
-          <li key={link.href}
-              className=""
+          <li key={link.href} >
           
-          >
-          
-            <a
+            <Link
       href={link.href}
       className="relative inline-block py-2 text-2xl font-bold
                  text-white hover:text-white
@@ -56,7 +56,7 @@ export default function NavbarLinks() {
     >
 
       {link.label}
-    </a>
+    </Link>
           </li>
         ))}
       </ul>

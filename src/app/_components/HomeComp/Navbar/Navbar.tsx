@@ -4,6 +4,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname } from "@/i18n/navigation";
 import NavbarLinks from "./NavbarLinks/NavbarLinks";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   const t = useTranslations("Navbar");
@@ -23,10 +24,10 @@ export default function Navbar() {
       
       {/* 1. Logo */}
       <div className="f hover:cursor-pointer">
-        <a href="/#" className="flex flex-col justify-center items-center ">
+        <Link href="#" className="flex flex-col justify-center items-center ">
           <span><Image src={"/dr.jpeg"} width={30} height={30} alt="doctor logo" className=" rounded-[25px]"/></span>
         <h1 className="font-black text-[11px] md:text-lg">{t("Mohamed Yasser")}</h1>
-        </a>
+        </Link>
       </div>
 
       {/* 2. Desktop Navigation Links (Centered) */}
