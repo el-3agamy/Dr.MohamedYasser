@@ -105,5 +105,8 @@
       "whatsappConvert" : "تواصل عبر واتساب" ,
       "typing" : "المساعد يكتب..." ,
       "askPlaceholder" :"اسأل ما تريد..."
+    } ,
+     "MainNotFoundPage" :{
+      "MainNotFoundPageBtn" :"الرجوع للصفخة الرئيسية"
     }
 }

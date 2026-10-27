@@ -106,5 +106,8 @@
       "whatsappConvert" : "Chat on WhatsApp" ,
       "typing" : "Assistant is typing..." ,
       "askPlaceholder" :"Ask a question..."
+    } ,
+    "MainNotFoundPage" :{
+      "MainNotFoundPageBtn" :"Go Home"
     }
 }
