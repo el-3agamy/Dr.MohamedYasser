@@ -1,8 +1,9 @@
 import React from 'react'
+import "../globals.css";
 
 export default function Layout({children} : {children : React.ReactNode}) {
   return (
-    <html lang='ar' dir='rtl'>
+    <html lang='en' dir='ltr'>
         <head>
 
         </head>
