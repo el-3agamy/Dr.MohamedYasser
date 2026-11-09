@@ -29,7 +29,7 @@ export default function NavbarLinks() {
  const locale =   useLocale()
   const links = [
     { label: t("home"), href: "#" },
-    { label: t("about"), href: "#about" },
+    { label: t("about"), href: "/#about" },
     { label: t("services"), href: "#services" },
     { label: t("contact"), href: "#contact" },
     { label: t("locations"), href: "#locations" },

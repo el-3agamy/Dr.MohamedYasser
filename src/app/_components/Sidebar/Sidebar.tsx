@@ -7,7 +7,9 @@ export default function Sidebar() {
       <nav>
         <ul className='py-10 flex flex-col gap-y-2 justify-center items-cener w-full bg-red-200 text-center'>
           <li>
-            <Link href={"dashboard"} >DashBoard</Link>
+            <Link href={"
+              
+              dashboard"} >DashBoard</Link>
           </li>
           <li>
             <Link href={"patient"}  >Patient</Link>

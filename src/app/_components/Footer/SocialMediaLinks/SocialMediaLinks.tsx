@@ -13,7 +13,8 @@ const socialLinks = [
   { name: "Instagram", icon: siInstagram, url: "https://www.instagram.com/drmohyaser1/", hoverColor: "#E4405F" },
   { name: "X", icon: siX, url: "https://www.tiktok.com/@dent.moh.yaser?_r=1&_t=ZS-9AbDf4YhNqM", hoverColor: "#000000" },
   { name: "Messenger", icon: siMessenger, url: "https://www.facebook.com/mohamed.yaser.5876", hoverColor: "#0084FF" },
-  { name: "WhatsApp", icon: siWhatsapp, url: "https://elagamiabdalla-lgtm.github.io/Dr-Mhmd-Yasser-booking/?source=Instagram&campaign=Bookings&medium=Bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAadWlmzIkBNZ6YIeS_HOt8KUDUOnEkb7xXD7D4_aXAZl5ZNhs9TQ3YV9LpdnZA_aem_bsJT0_PtIdSroIYEfc8BZQ", hoverColor: "#25D366" },
+  // { name: "WhatsApp", icon: siWhatsapp, url: "https://elagamiabdalla-lgtm.github.io/Dr-Mhmd-Yasser-booking/?source=Instagram&campaign=Bookings&medium=Bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAadWlmzIkBNZ6YIeS_HOt8KUDUOnEkb7xXD7D4_aXAZl5ZNhs9TQ3YV9LpdnZA_aem_bsJT0_PtIdSroIYEfc8BZQ", hoverColor: "#25D366" },
+  { name: "WhatsApp", icon: siWhatsapp, url: "https://wa.me/201092901881", hoverColor: "#25D366" },
   { name: "TikTok", icon: siTiktok, url: "https://www.tiktok.com/@dent.moh.yaser?_r=1&_t=ZS-9AbDf4YhNqM", hoverColor: "#FE2C55" },
 ];
 
