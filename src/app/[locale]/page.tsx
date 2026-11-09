@@ -37,9 +37,8 @@ export default function Home() {
         <Education />
         <Smile />
         <Services />
-        <WhatsAppFrom />
+        {/* <WhatsAppFrom /> */}
         <Locations />
-        {/* <Footer /> */}
       </div>
     </>
   );

@@ -28,10 +28,10 @@ export default function NavbarLinks() {
    const [isOpen, setIsOpen] = useState(false);
  const locale =   useLocale()
   const links = [
-    { label: t("home"), href: "#" },
-    { label: t("about"), href: "/#about" },
-    { label: t("services"), href: "#services" },
-    { label: t("contact"), href: "#contact" },
+    { label: t("home"), href: `/${locale}` },
+    { label: t("about"), href: `/${locale}/about` },
+    { label: t("services"), href: `/${locale}/#services` },
+    { label: t("contact"), href: `/${locale}/contact` },
     { label: t("locations"), href: "#locations" },
   ];
 

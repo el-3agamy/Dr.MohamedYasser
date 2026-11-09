@@ -47,6 +47,8 @@
     "serviceTwo": {
       "tit": "Crown and Bridge",
       "desc": "we provide premium dental crown solutions to restore your teeth’s strength and natural appearance. Whether protecting a tooth after root canal treatment or enhancing your smile, we use top-quality materials and advanced techniques for durability and beauty that last. Your smile deserves the best.",
+      "discover": "Discover More",
+     
       "whatIsServiceQ": "What is Dental Crowns Treatment?",
       "whatIsServiceA": "Crowns are recommended in the following cases: Restoring a tooth with a large filling and minimal remaining tooth structure Protecting a weak tooth from breaking, such as after a root canal treatment Covering a discolored or misshapen tooth Supporting a dental bridge Covering a dental implant At our clinic, we use CEREC technology to provide same-day crowns.",
       "whenIsServiceNecessaryQ": "When is a Dental Crowns  Necessary?",
@@ -55,6 +57,8 @@
     "serviceThree": {
       "tit": "Pediatric Dentistry",
       "desc": "provide Pediatric Dentistry services with the highest standards of care and comfort to ensure a positive and healthy experience for your child. Our friendly and welcoming environment helps young patients feel relaxed and confident during their visits. We use the latest techniques for early detection and treatment of dental issues, offering preventive care, fillings, and cavity treatments to maintain healthy teeth and proper oral development.",
+      "discover": "Discover More",
+      
       "whatIsServiceQ": " Child Dentistry OR Pediatric Dentistry",
       "whatIsServiceA": "we offer top-quality dental care tailored specifically for children. Using the latest techniques and gentle treatment approaches, we ensure your child feels safe and comfortable at every step. Perfect Smile’s pediatric dentist center provides a child-friendly environment suitable for all ages, supported by a highly trained team focused on your child’s comfort",
       "whenIsServiceNecessaryQ": "Why Pediatric Dentistry is Essential for Your Child’s Health?",
@@ -63,6 +67,8 @@
     "serviceFour": {
       "tit": "Root canal treatment",
       "desc": "Canal root treatment with advanced techniques to save your natural teeth and relieve pain effectively. Our expert dental team uses precise methods and modern technology to clean and disinfect the infected root canal, then seal it to prevent future issues. This treatment helps restore the function and health of your tooth, avoiding the need for extraction.",
+      "discover": "Discover More",
+      
       "whatIsServiceQ": "What is Canal Root Treatment?",
       "whatIsServiceA": "We specialize in root canal treatments that save your tooth, relieve pain, and restore normal function. A root canal is a procedure used to treat infections or damage to the pulp (inner tissue) of a tooth, often due to deep decay, cracks, or repeated dental procedures.",
       "whenIsServiceNecessaryQ": "When is a Root Canal Necessary?",
@@ -71,6 +77,8 @@
     "serviceFive": {
       "tit": "Whitening",
       "desc": "We offer advanced Teeth whitening treatments to give you a bright, radiant smile in no time. Using the latest technology and safe, effective whitening solutions, our experts remove stains and discoloration while protecting your teeth’s natural enamel. Get ready to shine with confidence.",
+      "discover": "Discover More",
+      
       "whatIsServiceQ": "What is Teeth Whitening?",
       "whatIsServiceA": "Teeth whitening is a cosmetic dental procedure designed to enhance the appearance of your smile by lightening the natural color of your teeth and reducing unwanted stains and discoloration. Over time, teeth can become yellow or stained due to several factors, including drinking coffee and tea, smoking, consuming highly pigmented foods and beverages, and the natural aging process.",
       "whenIsServiceNecessaryQ": "When is a Teeth Whitening  Necessary?",
@@ -79,6 +87,8 @@
     "serviceSix": {
       "tit": "Wisdom tooth treatment",
       "desc": "Canal root treatment with advanced techniques to save your natural teeth and relieve pain effectively. Our expert dental team uses precise methods and modern technology to clean and disinfect the infected root canal, then seal it to prevent future issues. This treatment helps restore the function and health of your tooth, avoiding the need for extraction.",
+      "discover": "Discover More",
+      
       "whatIsServiceQ": "What Are Wisdom Teeth?",
       "whatIsServiceA": "Wisdom teeth are the final set of molars that usually come in during the late teens or early twenties. For some people, wisdom teeth grow in without problems. However, for many others, these teeth can cause pain, infection, or damage to nearby teeth. In some case, wisdom teeth removal becomes the most effective solution.",
       "whenIsServiceNecessaryQ": "When Do Wisdom Teeth Need Treatment?",

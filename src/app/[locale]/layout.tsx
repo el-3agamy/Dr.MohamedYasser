@@ -12,6 +12,7 @@ import "../globals.css";
 import Navbar from "../_components/HomeComp/Navbar/Navbar";
 import Footer from "../_components/Footer/Footer";
 import { Analytics } from "@vercel/analytics/next";
+import WhatsAppFrom from "../_components/WhatsAppFrom/WhatsAppFrom";
 
 const BASE_URL = "https://dr-mohamed-yasser-swart.vercel.app";
 
@@ -128,6 +129,7 @@ export default async function LocaleLayout({
             <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}
+          <WhatsAppFrom />
           <Footer />
         </NextIntlClientProvider>
         <Analytics />

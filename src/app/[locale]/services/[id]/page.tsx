@@ -78,13 +78,10 @@ export default async function Service({ params }: Props) {
 
           <article className="w-[80%] border rounded-[20px] border-emerald-300 p-3.5 bg-ivory-200">
             <h2 className="text-emerald-700 text-[24px] font-bold ">{service?.whatIsServiceQ}</h2>
-            {/* <h2 className="text-emerald-700 text-[24px] font-bold ">ما هي جسور الأسنان؟</h2> */}
-            {/* <p>جسر الأسنان يُستخدم لاستبدال سن أو أكثر مفقودة عن طريق “ربط” الفجوة بأسنان صناعية (أو أسنان صناعية) متصلة بالأسنان الطبيعية المجاورة أو زراعة الأسنان. يساعد الجسر على استعادة الوظيفة والشكل الجمالي وبنية الأسنان الطبيعية.</p> */}
             <p>{service?.whatIsServiceA} </p>
           </article>
 
           <article className="w-[80%] border rounded-[20px] border-emerald-300 p-3.5 bg-ivory-200">
-            {/* <h2 className="text-emerald-700 text-[24px] font-bold ">دواعي استخدام جسر الأسنان:</h2> */}
             <h2 className="text-emerald-700 text-[24px] font-bold ">{service?.whenIsServiceNecessaryQ}</h2>
             {/* <div>
               استبدال الأسنان المفقودة لاستعادة الوظيفة والشكل الجمالي. <br />
@@ -94,7 +91,7 @@ export default async function Service({ params }: Props) {
 
             <ul>
               {
-                service?.whenIsServiceNecessaryA?.map((obj)=>{ return(<li>{obj}</li>)}) 
+                service?.whenIsServiceNecessaryA?.map((obj , index)=>{ return(<li key={index}>{obj}</li>)}) 
               }
             </ul>
           </article>
