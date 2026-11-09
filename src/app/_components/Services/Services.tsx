@@ -8,7 +8,12 @@ export type serviceObjType = {
     title: string;
     body: string;
     img: string,
-    discover: string
+    serviceCover: string,
+    discover: string,
+    whatIsServiceQ: string,
+    whatIsServiceA: string,
+    whenIsServiceNecessaryQ: string,
+    whenIsServiceNecessaryA: string[],
 };
 
 
@@ -20,7 +25,7 @@ export default function Services() {
 
     return (
         <>
-            <section 
+            <section
                 className='flex flex-col items-center justify-center gap-y-1 py-16 px-3 bg-ivory-100' id='services'>
 
                 <h1 className='  text-emerald-900 text-2xl md:text-5xl font-black  mb-10'>
@@ -46,7 +51,7 @@ export default function Services() {
 
                 {/* =================== Cards Container ============= */}
                 {/* <div className='bg-emerald-500 flex flex-col justify-center items-center'> */}
-                    <div className=" flex flex-col items-center justify-center flex-wrap md:flex-row md:justify-start   my-5  md:w-275  md:px-0  gap-6 ">
+                <div className=" flex flex-col items-center justify-center flex-wrap md:flex-row md:justify-start   my-5  md:w-275  md:px-0  gap-6 ">
                     {servicesObjArr.map((obj) => (
                         <ServiceCard
                             key={obj.id}

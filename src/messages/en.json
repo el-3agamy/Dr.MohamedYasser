@@ -1,7 +1,7 @@
 {
-  "MetaData" : {
-      "websiteTitle" : "Dentist in Egypt | Dr. Mohamed Yasser " ,
-      "websiteDescription" : "Dr. Mohamed Yasser Dental Clinic in Egypt located in Gharbia governorate specifically in Bassyon & Tanta"
+  "MetaData": {
+    "websiteTitle": "Dentist in Egypt | Dr. Mohamed Yasser ",
+    "websiteDescription": "Dr. Mohamed Yasser Dental Clinic in Egypt located in Gharbia governorate specifically in Bassyon & Tanta"
   },
   "Navbar": {
     "home": "Home",
@@ -10,104 +10,126 @@
     "contact": "Contacts",
     "locations": "Locations",
     "bookAppointment": "Appointment",
-    "Mohamed Yasser" :"Dr.Yasser" ,
+    "Mohamed Yasser": "Dr.Yasser",
     "switchLanguage": "العربية"
-  } ,
-  "Hero" :{
-    "title" : "We Care About You and Your Health" ,
-    "subtitle" : "Your comfort, dental health, and smile are always our priority."
-  } ,
-  "About" :{
-    "titleLined" : "Dr.Mohamed Yasser." ,
-    "titleRest" : "About " ,
-    "bio" : "Dr. Mohamed Yasser is a a dedicated dentist with over 5 years of experience in dentistry, with a particular interest in orthodontics, esthetic dentistry, Digital Smile Design, and full-mouth rehabilitation.Combining clinical precision with modern dental techniques, he strives to deliver outstanding functional and aesthetic results through personalized treatment plans tailored to each patient's needs.Committed to lifelong learning and professional development, he continuously explores the latest advancements in dentistry to provide high-quality care and help every patient achieve a healthy, confident smile."
-  } ,
-  "Smile" :{
-    "titleLined" : "Smile" ,
-    "titleRest" : " Transformations." ,
-    "desc1" : "See the remarkable difference our expert dental care can make.",
-    "desc2" : "Before and after, the journey to your perfect smile begins here!",
-    "before" : "BEFORE" ,
-    "after" : "AFTER"
-  } ,
-  "Services" :{
-    "titleLined" : "Services " ,
-    "titleRest" : "We offer." ,
-    "desc1" : "See the remarkable difference our expert dental care can make.",
-    "desc2" : "Before and after, the journey to your perfect smile begins here!",
-    "serviceOne" :{
-      "tit" : "Orthodontics",
-      "desc" :"At Our Dental Centers, we provide advanced Orthodontics treatments to straighten teeth and perfect your smile comfortably and effectively. Whether with metal braces or clear aligners, our goal is to deliver outstanding results that enhance your natural beauty. Your straighter smile starts here."
-      ,
-      "discover" : "Discover More"
+  },
+  "Hero": {
+    "title": "We Care About You and Your Health",
+    "subtitle": "Your comfort, dental health, and smile are always our priority."
+  },
+  "About": {
+    "titleLined": "Dr.Mohamed Yasser.",
+    "titleRest": "About ",
+    "bio": "Dr. Mohamed Yasser is a a dedicated dentist with over 5 years of experience in dentistry, with a particular interest in orthodontics, esthetic dentistry, Digital Smile Design, and full-mouth rehabilitation.Combining clinical precision with modern dental techniques, he strives to deliver outstanding functional and aesthetic results through personalized treatment plans tailored to each patient's needs.Committed to lifelong learning and professional development, he continuously explores the latest advancements in dentistry to provide high-quality care and help every patient achieve a healthy, confident smile."
+  },
+  "Smile": {
+    "titleLined": "Smile",
+    "titleRest": " Transformations.",
+    "desc1": "See the remarkable difference our expert dental care can make.",
+    "desc2": "Before and after, the journey to your perfect smile begins here!",
+    "before": "BEFORE",
+    "after": "AFTER"
+  },
+  "Services": {
+    "titleLined": "Services ",
+    "titleRest": "We offer.",
+    "desc1": "See the remarkable difference our expert dental care can make.",
+    "desc2": "Before and after, the journey to your perfect smile begins here!",
+    "serviceOne": {
+      "tit": "Orthodontics",
+      "desc": "At Our Dental Centers, we provide advanced Orthodontics treatments to straighten teeth and perfect your smile comfortably and effectively. Whether with metal braces or clear aligners, our goal is to deliver outstanding results that enhance your natural beauty. Your straighter smile starts here.",
+      "discover": "Discover More",
+      "whatIsServiceQ": "What is Orthodontics Treatments?",
+      "whatIsServiceA": "Orthodontics treatments are one of the most important branches of cosmetic dentistry, and aims to correct problems of jaw occlusion or misalignment of teeth due to the width between the jaws or the spaces between the teeth, which represent an aesthetic obstacle to the mouth.",
+      "whenIsServiceNecessaryQ": "When is Orthodontics Treatments Necassery?",
+      "whenIsServiceNecessaryA": "'Crowded or misaligned teeth','Large gaps between teeth','Protruding front teeth' ,'Open bite or deep bite' , 'Improper jaw alignment','Difficulty chewing or biting food' ,'Speech difficulties related to teeth alignment' , 'Crooked or tilted teeth'"
     },
-    "serviceTwo" :{
-      "tit" : "Crown and Bridge",
-      "desc" : "At Perfect Smile Dental Center, we provide premium dental crown solutions to restore your teeth’s strength and natural appearance. Whether protecting a tooth after root canal treatment or enhancing your smile, we use top-quality materials and advanced techniques for durability and beauty that last. Your smile deserves the best."
+    "serviceTwo": {
+      "tit": "Crown and Bridge",
+      "desc": "we provide premium dental crown solutions to restore your teeth’s strength and natural appearance. Whether protecting a tooth after root canal treatment or enhancing your smile, we use top-quality materials and advanced techniques for durability and beauty that last. Your smile deserves the best.",
+      "whatIsServiceQ": "What is Dental Crowns Treatment?",
+      "whatIsServiceA": "Crowns are recommended in the following cases: Restoring a tooth with a large filling and minimal remaining tooth structure Protecting a weak tooth from breaking, such as after a root canal treatment Covering a discolored or misshapen tooth Supporting a dental bridge Covering a dental implant At our clinic, we use CEREC technology to provide same-day crowns.",
+      "whenIsServiceNecessaryQ": "When is a Dental Crowns  Necessary?",
+      "whenIsServiceNecessaryA": "'Severely worn or broken teeth' , 'Extensive tooth decay that cannot be treated with a regular filling' , 'Weak teeth after root canal treatment' , 'Cracked or fractured teeth'"
     },
-      "serviceThree" :{
-      "tit" : "Pediatric Dentistry",
-      "desc" : "At Perfect Smile Dental Center, provide Pediatric Dentistry services with the highest standards of care and comfort to ensure a positive and healthy experience for your child. Our friendly and welcoming environment helps young patients feel relaxed and confident during their visits. We use the latest techniques for early detection and treatment of dental issues, offering preventive care, fillings, and cavity treatments to maintain healthy teeth and proper oral development."
+    "serviceThree": {
+      "tit": "Pediatric Dentistry",
+      "desc": "provide Pediatric Dentistry services with the highest standards of care and comfort to ensure a positive and healthy experience for your child. Our friendly and welcoming environment helps young patients feel relaxed and confident during their visits. We use the latest techniques for early detection and treatment of dental issues, offering preventive care, fillings, and cavity treatments to maintain healthy teeth and proper oral development.",
+      "whatIsServiceQ": " Child Dentistry OR Pediatric Dentistry",
+      "whatIsServiceA": "we offer top-quality dental care tailored specifically for children. Using the latest techniques and gentle treatment approaches, we ensure your child feels safe and comfortable at every step. Perfect Smile’s pediatric dentist center provides a child-friendly environment suitable for all ages, supported by a highly trained team focused on your child’s comfort",
+      "whenIsServiceNecessaryQ": "Why Pediatric Dentistry is Essential for Your Child’s Health?",
+      "whenIsServiceNecessaryA": "'Prevent cavities and tooth decay' , 'Promote healthy growth of teeth and gums' , 'Establish good oral hygiene habits that last a lifetime' , 'Address dental issues early to avoid more serious complications later'"
     },
-    "serviceFour" :{
-      "tit" : "Root canal treatment",
-      "desc" : "Canal root treatment at Perfect Smile Dental Center, with advanced techniques to save your natural teeth and relieve pain effectively. Our expert dental team uses precise methods and modern technology to clean and disinfect the infected root canal, then seal it to prevent future issues. This treatment helps restore the function and health of your tooth, avoiding the need for extraction."
+    "serviceFour": {
+      "tit": "Root canal treatment",
+      "desc": "Canal root treatment with advanced techniques to save your natural teeth and relieve pain effectively. Our expert dental team uses precise methods and modern technology to clean and disinfect the infected root canal, then seal it to prevent future issues. This treatment helps restore the function and health of your tooth, avoiding the need for extraction.",
+      "whatIsServiceQ": "What is Canal Root Treatment?",
+      "whatIsServiceA": "We specialize in root canal treatments that save your tooth, relieve pain, and restore normal function. A root canal is a procedure used to treat infections or damage to the pulp (inner tissue) of a tooth, often due to deep decay, cracks, or repeated dental procedures.",
+      "whenIsServiceNecessaryQ": "When is a Root Canal Necessary?",
+      "whenIsServiceNecessaryA": "'Severe tooth pain' , 'Tooth sensitivity to hot or cold' ,  'Swelling or tenderness around the tooth' ,  'Tooth discoloration (darkening)' , 'Recurring abscesses or gum boils'"
     },
-    "serviceFive" :{
-      "tit" : "Whitening",
-      "desc" : "We offer advanced Teeth whitening treatments to give you a bright, radiant smile in no time. Using the latest technology and safe, effective whitening solutions, our experts remove stains and discoloration while protecting your teeth’s natural enamel. Get ready to shine with confidence."
+    "serviceFive": {
+      "tit": "Whitening",
+      "desc": "We offer advanced Teeth whitening treatments to give you a bright, radiant smile in no time. Using the latest technology and safe, effective whitening solutions, our experts remove stains and discoloration while protecting your teeth’s natural enamel. Get ready to shine with confidence.",
+      "whatIsServiceQ": "What is Teeth Whitening?",
+      "whatIsServiceA": "Teeth whitening is a cosmetic dental procedure designed to enhance the appearance of your smile by lightening the natural color of your teeth and reducing unwanted stains and discoloration. Over time, teeth can become yellow or stained due to several factors, including drinking coffee and tea, smoking, consuming highly pigmented foods and beverages, and the natural aging process.",
+      "whenIsServiceNecessaryQ": "When is a Teeth Whitening  Necessary?",
+      "whenIsServiceNecessaryA": "'Yellow or discolored teeth' , 'Coffee and tea stains' , 'Smoking-related stains' , ' Surface stains caused by certain foods and drinks'"
     },
-    "serviceSix" :{
-      "tit" : "Wisdom tooth treatment",
-      "desc" : "Canal root treatment at Perfect Smile Dental Center, with advanced techniques to save your natural teeth and relieve pain effectively. Our expert dental team uses precise methods and modern technology to clean and disinfect the infected root canal, then seal it to prevent future issues. This treatment helps restore the function and health of your tooth, avoiding the need for extraction."
-  }
-  }
-   ,
-  "Contact" : {
-    "titleLined" : "Contact ",
-    "titleRest" : "US.",
-    "userNameInputPlaceholder" : "Enter Your Full Name",
-    "whatsAppInputPlaceholder" : "Enter Your Whatsapp Number",
-    "btn" : "Submit",
-    "sucessStatusMsg" : "Thank you! Your details have been saved.",
-    "faildStatusMsg" : "Something went wrong. Please try again." ,
-    "nameInputValidation" : "Please enter a valid name using letters only  min 3 max 21",
-    "whatsappNumberValidation" : "Enter a valid Egyptian mobile number: 010, 011, 012 or 015 followed by 8 digits."
-  } , 
-  "Locations" : {
-    "title" : "Locations." ,
-    "getDir" : "Get Directions",
-    "firstLocation" : {
-      "addressTitle" : "Bassyon City Branch", 
-      "address" : "Qaransho - Bassyon - Gharbia" 
-    },
-    "secondLocation" : {
-      "addressTitle" : "Tanta City Branch", 
-      "address" : "Kharsit - Tanta City - Gharbia" 
-    },
-    "thirdLocation" : {
-      "addressTitle" : "Tala City Branch", 
-      "address" : "Zenarah - Tala - Menoufia" 
-    },
-    "fourthLocation" : {
-      "addressTitle" : "Kafr El-Zayat Branch", 
-      "address" : "Qalib Ibyar - Kafr El Zayat - Gharbia" 
-    },
-    "fivthLocation" : {
-      "addressTitle" : "Tanta City Branch", 
-      "address" : "Mahalat Rouh - Tanta - Gharbia" 
+    "serviceSix": {
+      "tit": "Wisdom tooth treatment",
+      "desc": "Canal root treatment with advanced techniques to save your natural teeth and relieve pain effectively. Our expert dental team uses precise methods and modern technology to clean and disinfect the infected root canal, then seal it to prevent future issues. This treatment helps restore the function and health of your tooth, avoiding the need for extraction.",
+      "whatIsServiceQ": "What Are Wisdom Teeth?",
+      "whatIsServiceA": "Wisdom teeth are the final set of molars that usually come in during the late teens or early twenties. For some people, wisdom teeth grow in without problems. However, for many others, these teeth can cause pain, infection, or damage to nearby teeth. In some case, wisdom teeth removal becomes the most effective solution.",
+      "whenIsServiceNecessaryQ": "When Do Wisdom Teeth Need Treatment?",
+      "whenIsServiceNecessaryA": "'Are impacted (don’t fully emerge from the gums).' , 'Cause pain or swelling.' , 'Push against other teeth, causing misalignment.' , 'Are at risk of causing infection or cavities.'"
     }
-  } , 
-    "ChatWidget" :{
-      "chatBotTitle" : "Chat with Assistant" ,
-      "welcomeMsg" : "Hello! 👋 Welcome to Dr. Yasser Dental Clinic. How can I help you today?",
-      "online" : "Online" ,
-      "chatBotName" : "Dental Assistant" ,
-      "whatsappConvert" : "Chat on WhatsApp" ,
-      "typing" : "Assistant is typing..." ,
-      "askPlaceholder" :"Ask a question..."
-    } ,
-    "MainNotFoundPage" :{
-      "MainNotFoundPageBtn" :"Go Home"
+  },
+  "Contact": {
+    "titleLined": "Contact ",
+    "titleRest": "US.",
+    "userNameInputPlaceholder": "Enter Your Full Name",
+    "whatsAppInputPlaceholder": "Enter Your Whatsapp Number",
+    "btn": "Submit",
+    "sucessStatusMsg": "Thank you! Your details have been saved.",
+    "faildStatusMsg": "Something went wrong. Please try again.",
+    "nameInputValidation": "Please enter a valid name using letters only  min 3 max 21",
+    "whatsappNumberValidation": "Enter a valid Egyptian mobile number: 010, 011, 012 or 015 followed by 8 digits."
+  },
+  "Locations": {
+    "title": "Locations.",
+    "getDir": "Get Directions",
+    "firstLocation": {
+      "addressTitle": "Bassyon City Branch",
+      "address": "Qaransho - Bassyon - Gharbia"
+    },
+    "secondLocation": {
+      "addressTitle": "Tanta City Branch",
+      "address": "Kharsit - Tanta City - Gharbia"
+    },
+    "thirdLocation": {
+      "addressTitle": "Tala City Branch",
+      "address": "Zenarah - Tala - Menoufia"
+    },
+    "fourthLocation": {
+      "addressTitle": "Kafr El-Zayat Branch",
+      "address": "Qalib Ibyar - Kafr El Zayat - Gharbia"
+    },
+    "fivthLocation": {
+      "addressTitle": "Tanta City Branch",
+      "address": "Mahalat Rouh - Tanta - Gharbia"
     }
+  },
+  "ChatWidget": {
+    "chatBotTitle": "Chat with Assistant",
+    "welcomeMsg": "Hello! 👋 Welcome to Dr. Yasser Dental Clinic. How can I help you today?",
+    "online": "Online",
+    "chatBotName": "Dental Assistant",
+    "whatsappConvert": "Chat on WhatsApp",
+    "typing": "Assistant is typing...",
+    "askPlaceholder": "Ask a question..."
+  },
+  "MainNotFoundPage": {
+    "MainNotFoundPageBtn": "Go Home"
+  }
 }
