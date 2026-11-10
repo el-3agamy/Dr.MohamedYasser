@@ -32,7 +32,7 @@ export default function NavbarLinks() {
     { label: t("about"), href: `/${locale}/about` },
     { label: t("services"), href: `/${locale}/#services` },
     { label: t("contact"), href: `/${locale}/contact` },
-    { label: t("locations"), href: "#locations" },
+    { label: t("locations"), href: `/${locale}/locations` },
   ];
 
   return (
