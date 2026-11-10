@@ -30,9 +30,9 @@ export default function NavbarLinks() {
   const links = [
     { label: t("home"), href: `/${locale}` },
     { label: t("about"), href: `/${locale}/about` },
-    { label: t("services"), href: `/${locale}/#services` },
+    { label: t("services"), href: `/${locale}/services` },
     { label: t("contact"), href: `/${locale}/contact` },
-    { label: t("locations"), href: `/${locale}/locations` },
+    { label: t("locations"), href: `/${locale}/#locations` },
   ];
 
   return (
