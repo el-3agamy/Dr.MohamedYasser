@@ -35,16 +35,14 @@ export default function ServicesPage() {
                         <div className="w-20 h-1 bg-amber-400 mt-7 mb-7 rounded-full" />
 
                         <p className="text-slate-600 text-base md:text-lg leading-9 max-w-xl">
-                            {/* {t("desc1")} {t("desc2")} */}
-                            نقدم مجموعة متنوعة من خدمات طب الأسنان باستخدام أحدث التقنيات لتحقيق أفضل النتائج.
-
+                            {t("servicesPageP")}
                         </p>
 
                         <Link
                             href={`/${locale}#contact`}
                             className="inline-flex mt-9 px-8 py-4 rounded-xl bg-emerald-800 text-white font-semibold hover:bg-emerald-700 hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-emerald-900/10"
                         >
-                            احجز موعدك الآن
+                           {t("bookServicePageBtn")}
                         </Link>
                     </div>
 
@@ -72,13 +70,7 @@ export default function ServicesPage() {
                 <div className="max-w-7xl mx-auto">
 
                     <div className="mb-14 flex flex-col md:flex-row md:items-end md:justify-between gap-5 reveal-up">
-                        {/* <div>
-                           
-
-                            <h2 className="text-3xl md:text-5xl font-black text-emerald-950 mt-4">
-                                خدماتنا الطبية
-                            </h2>
-                        </div> */}
+                       
 
                         <p className="max-w-md text-slate-500 leading-8">
                         </p>
@@ -126,7 +118,7 @@ export default function ServicesPage() {
                                         <div className="mt-6 flex items-center gap-3 text-amber-300 font-semibold">
                                             <span>{service.discover}</span>
                                             <span className="group-hover:-translate-x-2 transition-transform duration-300">
-                                                ←
+                                                {t("arrowDiscoverMore")}
                                             </span>
                                         </div>
                                     </div>
@@ -146,19 +138,18 @@ export default function ServicesPage() {
                     
 
                     <h2 className="text-3xl md:text-5xl font-black text-white mt-5 mb-8">
-                        ابتسامتك تستحق أفضل رعاية
+                        {t("whyUsTitle")}
                     </h2>
 
                     <p className="max-w-2xl mx-auto text-emerald-100/70 leading-9">
-                        نحرص على تقديم تجربة علاجية تجمع بين الخبرة الطبية،
-                        الاهتمام بالتفاصيل، واستخدام التقنيات الحديثة.
+                       {t("whyUsP")}
                     </p>
 
                     <Link
                         href={`/${locale}#contact`}
                         className="inline-flex mt-9 px-9 py-4 rounded-xl bg-amber-400 text-emerald-950 font-bold hover:bg-amber-300 hover:-translate-y-1 transition-all duration-300"
                     >
-                        تواصل معنا
+                        {t("bookServicePageBtn")}
                     </Link>
                 </div>
             </section>
