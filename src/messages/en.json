@@ -21,6 +21,33 @@
     "titleLined": "Dr.Mohamed Yasser.",
     "titleRest": "About ",
     "bio": "Dr. Mohamed Yasser is a a dedicated dentist with over 5 years of experience in dentistry, with a particular interest in orthodontics, esthetic dentistry, Digital Smile Design, and full-mouth rehabilitation.Combining clinical precision with modern dental techniques, he strives to deliver outstanding functional and aesthetic results through personalized treatment plans tailored to each patient's needs.Committed to lifelong learning and professional development, he continuously explores the latest advancements in dentistry to provide high-quality care and help every patient achieve a healthy, confident smile."
+    ,
+
+    "knowDr" : "Meet the Doctor" ,
+    "professional1" : "Professionalism" ,
+    "professional2": "Specialized medical care" ,
+    "specialties" : {
+      "tit" : "Areas of Expertise",
+      "p" : "A range of services and specialties to provide comprehensive care.",
+      "1" : "Oral and Dental Surgery",
+      "2" : "Dental Implants",
+      "3" : "Orthodontics",
+      "4" : "Cosmetic Dentistry"
+    },
+    "education" : {
+      "tit" : "Academic Qualifications",
+      "subTit" : "Academic Journey" ,
+      "1" : "Bachelor’s Degree in Dental Medicine and Surgery",
+      "2" : "Master’s Degree in Oral and Dental Surgery",
+      "3" : "Specialized Certifications in Dental Implants",
+      "4" : "Continuous Training in the Latest Medical Technologies"
+    } ,
+    "welcomeToVisit" : "You are Welcome." ,
+    "welcomeToVisitMsg" : "You Welcome In Our Clinics." ,
+    "Phone" :"Phone " ,
+    "Address" : "Address " ,
+    "WhatsApp " : "WhatsApp ",
+    "Email" : "Email " 
   },
   "Smile": {
     "titleLined": "Smile",
@@ -133,7 +160,8 @@
     "fivthLocation": {
       "addressTitle": "Tanta City Branch",
       "address": "Mahalat Rouh - Tanta - Gharbia"
-    }
+    } ,
+    "callUs" : "Contact US"
   },
   "ChatWidget": {
     "chatBotTitle": "Chat with Assistant",

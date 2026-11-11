@@ -1,35 +1,19 @@
 
+import getBranchesData from '@/data/branchesData';
+import getEducationData from '@/data/educationData';
+import getSpecialtiesData from '@/data/specializatioData';
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React from 'react'
 
 export default function AboutPage() {
-    const t = useTranslations("About") ;
+    const t = useTranslations("About");
+    const tt = useTranslations("Locations")
+    const educationData = getEducationData(t);
+    const specialtiesData = getSpecialtiesData(t);
+    const clinics = getBranchesData();
 
-    const specialties = [
-        "جراحة الفم والأسنان",
-        "زراعة الأسنان",
-        "تقويم الأسنان",
-        "تجميل الأسنان",
-    ]
 
-    const certificates = [
-        "بكالوريوس في طب وجراحة الأسنان",
-        "ماجستير في جراحة الفم والأسنان",
-        "شهادات متخصصة في زراعة الأسنان",
-        "التدريب المستمر في أحدث التقنيات الطبية",
-    ]
-
-    const clinics = [
-        {
-            name: "فرع مصر الجديدة",
-            address: "12 شارع جمال نوح، متفرع من شارع الثورة، مصر الجديدة، القاهرة، مصر",
-        },
-        {
-            name: "فرع طنطا",
-            address: "طنطا، محافظة الغربية، مصر",
-        },
-    ]
 
     return (
         <main
@@ -44,7 +28,7 @@ export default function AboutPage() {
                     <div className="order-2 md:order-1 space-y-7">
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-700 text-sm font-medium">
                             <span className="w-2 h-2 rounded-full bg-emerald-500" />
-                            تعرف على الطبيب
+                            {t("knowDr")}
                         </div>
 
                         <div className="space-y-4">
@@ -61,10 +45,10 @@ export default function AboutPage() {
 
                         <div className="flex flex-wrap gap-3 pt-2">
                             <span className="px-5 py-3 rounded-xl bg-emerald-700 text-white text-sm font-semibold">
-                                خبرة واحترافية
+                                {t("professional1")}
                             </span>
                             <span className="px-5 py-3 rounded-xl border border-emerald-200 text-emerald-800 text-sm font-semibold">
-                                رعاية طبية متخصصة
+                                {t("professional2")}
                             </span>
                         </div>
                     </div>
@@ -81,31 +65,23 @@ export default function AboutPage() {
                                 sizes="(max-width: 768px) 100vw, 50vw"
                             />
                         </div>
-                        <div className="absolute -bottom-6 -right-4 md:-right-8 bg-white shadow-lg border border-emerald-100 rounded-2xl p-5">
-                            <p className="text-sm text-slate-500">التخصص الرئيسي</p>
-                            <p className="text-emerald-800 font-bold mt-1">
-                                طب وجراحة الأسنان
-                            </p>
-                        </div>
                     </div>
                 </section>
 
                 {/* Specialties */}
                 <section className="mb-24">
                     <div className="mb-9">
-                        <p className="text-emerald-600 text-sm font-semibold mb-3">
-                            مجالات الخبرة
-                        </p>
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
-                            التخصصات الطبية
+
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-700">
+                            {t("specialties.tit")}
                         </h2>
                         <p className="text-slate-500 mt-3">
-                            مجموعة من الخدمات والتخصصات لتقديم رعاية متكاملة.
+                            {t("specialties.p")}
                         </p>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                        {specialties.map((item, index) => (
+                        {specialtiesData.map((item, index) => (
                             <div
                                 key={index}
                                 className="group p-7 bg-white border border-emerald-100 rounded-2xl hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-900/5 transition-all duration-300"
@@ -129,14 +105,14 @@ export default function AboutPage() {
 
                         <div className="relative">
                             <p className="text-emerald-300 text-sm font-semibold mb-3">
-                                المسيرة الأكاديمية
+                                {t("education.tit")}
                             </p>
                             <h2 className="text-3xl md:text-4xl font-bold mb-10">
-                                الشهادات العلمية
+                                {t("education.subTit")}
                             </h2>
 
                             <div className="grid md:grid-cols-2 gap-6">
-                                {certificates.map((item, index) => (
+                                {educationData?.map((item, index) => (
                                     <div
                                         key={index}
                                         className="flex gap-4 items-start p-5 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors"
@@ -157,19 +133,17 @@ export default function AboutPage() {
                 {/* Clinics */}
                 <section>
                     <div className="mb-9">
-                        <p className="text-emerald-600 text-sm font-semibold mb-3">
-                            مواقعنا
-                        </p>
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
-                            فروع العيادة
+                
+                        <h2 className="text-center text-3xl md:text-4xl font-bold text-slate-900">
+                           {tt("title")}
                         </h2>
-                        <p className="text-slate-500 mt-3">
-                            نسعد باستقبالكم في فروعنا.
+                        <p className="text-slate-500 mt-3 text-center">
+                           {t("welcomeToVisitMsg")}
                         </p>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-6">
-                        {clinics.map((clinic, index) => (
+                        {clinics?.map((clinic, index) => (
                             <article
                                 key={index}
                                 className="p-7 md:p-9 bg-white border border-emerald-100 rounded-3xl hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300"
@@ -184,12 +158,30 @@ export default function AboutPage() {
                                 </div>
 
                                 <p className="text-slate-600 leading-8">
-                                    {clinic.address}
+                                  {t("Address")} : <span className='text-emerald-700'>{clinic.address}</span>
                                 </p>
 
+                                <p className="text-slate-600 leading-8">
+                                  {t("Phone")} :  <a href="tel:+201100054391" className='text-blue-500'>{clinic.phone}</a>
+                                </p>
+
+                                <p className="text-slate-600 leading-8">
+                                  {t("WhatsApp")} :  <a href="https://wa.me/201092901881" className='text-green-500'>{clinic.phone}</a>
+                                </p>
+
+                                <p className="text-slate-600 leading-8">
+                                  {t("Email")} :  <a href="" className='text-blue-400'>selagamy25@gmail.com</a>
+                                </p>
                                 <div className="mt-7 pt-5 border-t border-emerald-50">
                                     <span className="text-sm font-semibold text-emerald-700">
-                                        نرحب بزيارتكم
+                                        <a
+                                            href={clinic.mapLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="hover:text-emerald-500 transition-colors"
+                                        >
+                                           {t("welcomeToVisit")}
+                                        </a>
                                     </span>
                                 </div>
                             </article>

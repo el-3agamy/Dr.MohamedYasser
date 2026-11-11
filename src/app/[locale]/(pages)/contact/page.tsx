@@ -11,9 +11,9 @@ export default function ContactUsPage() {
       <main className='pt-25 bg-white'>
 
         <section className='p-25 text-center bg-gold-100 text-emerald-600'>
-            <h1 className=' font-bold text-3xl md:text-5xl mb-3'> اتصل بنا</h1>
+            <h1 className=' font-bold text-3xl md:text-5xl mb-3'>{t("callUs")}</h1>
             <p>
-            <span className=' pb-2 relative after:absolute after:w-full after:h-0.5 after:bg-amber-500 after:bottom-0 after:inset-s-0'>الفروع والتواصل</span>
+            {/* <span className=' pb-2 relative after:absolute after:w-full after:h-0.5 after:bg-amber-500 after:bottom-0 after:inset-s-0'>الفروع والتواصل</span> */}
             </p>
         </section>
 
