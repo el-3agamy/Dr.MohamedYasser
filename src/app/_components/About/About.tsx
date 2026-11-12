@@ -1,7 +1,10 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { cacheLife } from 'next/cache';
 
 export default function About() {
+  "use cache" ;
+  cacheLife("max")
   const t = useTranslations("About");
 
   return (

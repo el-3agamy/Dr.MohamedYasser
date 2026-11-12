@@ -91,16 +91,13 @@ export default async function Service({ params }: Props) {
 
             <ul>
               {
-                service?.whenIsServiceNecessaryA?.map((obj , index)=>{ return(<li key={index}>{obj}</li>)}) 
+                service?.whenIsServiceNecessaryA?.map((obj , index)=>{ return(<li key={index}>{index+1} - {obj}</li>)}) 
               }
             </ul>
           </article>
         </section>
 
-{/* contact form section */}
-        <section className="">
-          <WhatsAppFrom />
-        </section>
+
       </section>
 
 
