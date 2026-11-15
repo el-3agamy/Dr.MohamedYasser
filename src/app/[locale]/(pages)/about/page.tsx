@@ -1,5 +1,4 @@
 
-"use cache"
 import getBranchesData from '@/data/branchesData';
 import getEducationData from '@/data/educationData';
 import getSpecialtiesData from '@/data/specializatioData';
