@@ -4,7 +4,8 @@ import createNextIntlPlugin from 'next-intl/plugin';
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-    cacheComponents : true
+    cacheComponents: true,
+  partialPrefetching: true,
 };
 
 const withNextIntl = createNextIntlPlugin();
