@@ -9,7 +9,7 @@ export default function Hero() {
     <section className="relative isolate flex min-h-screen items-center
       justify-center overflow-hidden bg-emerald-950 px-6 text-center">
 
-      {/* <Suspense  fallback= {<p>video is loading ....</p>}> */}
+      <Suspense  fallback= {<p>video is loading ....</p>}>
       
       {/* Background video */}
     <video
@@ -23,7 +23,7 @@ export default function Hero() {
         <source src="/backGroundVideo.mp4" type="video/mp4" />
       </video>
 
-      {/* </Suspense> */}
+      </Suspense>
 
       {/* Emerald overlay */}
       <div className="absolute inset-0 -z-10 bg-black/60" />
